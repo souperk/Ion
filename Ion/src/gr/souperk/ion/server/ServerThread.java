@@ -23,8 +23,14 @@ public class ServerThread
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
 
-			String request = in.readLine();
+			String request = in.readLine();	
 			
+			try {
+				RequestHandler.handle(out, request);
+			} catch (InvalidRequestException e) 
+			{
+				out.println(e.getCode());
+			}
 			out.flush();
 			
 			in.close();
@@ -32,7 +38,6 @@ public class ServerThread
 			clientSocket.close();
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

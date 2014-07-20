@@ -1,11 +1,13 @@
 package gr.souperk.ion.properties;
 
+import java.util.Map;
+
 /**
  * {@code ServerProperties} holds the main properties of the server
  * like the port it runs on. 
  * <br></br>
  * It is designed with the singleton pattern which enables it to create only one
- * instance avoiding unnecessary reading.
+ * instance avoiding any unnecessary reading.
  * 
  * @author kostas
  *
@@ -16,9 +18,11 @@ public class ServerProperties
 {
 	private static ServerProperties instace;
 	
+	private Map<String, String> props;
+	
 	private ServerProperties()
 	{
-		
+		props = PropertiesTool.defaults();
 	}	
 	
 	/**
@@ -34,7 +38,7 @@ public class ServerProperties
 	
 	public String getProperty(String key)
 	{
-		return null;
+		return props.get(key);
 	}
 	
 	public int getInt(String key)
