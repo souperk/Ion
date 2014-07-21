@@ -3,15 +3,17 @@ package gr.souperk.ion.properties;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
- * Just o key holder for properties.
+/**
+ * Basic Utility class holding the key for various properties
+ * and holds the hardcoded default properties.
  * 
- * @author kostas
+ * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
  *
  */
 
-//TODO Create java doc
-public class PropertiesTool 
+//TODO Finish javadoc
+
+public class PropertiesTool
 {
 	public static String COMMAND_GET = "command.get";
 	public static String HTTP_VERSION = "http.version";
