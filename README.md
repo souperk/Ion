@@ -4,7 +4,7 @@ Ion is an example Web Server developed in java by Kostas "souperk" Alexopoulos (
 
 It uses Apache Commons Configuration, Apache Commons IO, Apache Commons Lang(2.6) and Apache Commons Logging libraries.
 
-Current release is 1.0.0 .
+Current release is 1.0.1 .
 
 
 Name
