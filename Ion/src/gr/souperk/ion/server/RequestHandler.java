@@ -6,6 +6,7 @@ import gr.souperk.ion.properties.ServerProperties;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
@@ -17,6 +18,19 @@ import org.apache.commons.io.FileUtils;
 
 public class RequestHandler
 {
+	public static void handle(PrintWriter out, List<String> args) 
+			throws RequestException, IOException
+	{
+		handle(out, args.get(0));
+	}
+	
+	/**
+	 * 
+	 * @param out The {@code PrintWriter} 
+	 * @param request
+	 * @throws RequestException
+	 * @throws IOException
+	 */
 	public static void handle(PrintWriter out, String request)
 		throws RequestException, IOException
 	{

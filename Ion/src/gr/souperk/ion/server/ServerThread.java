@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A {@code Thread} for communicating with the client.
@@ -32,12 +34,17 @@ public class ServerThread
 		try {
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
+		
+			String line = in.readLine();
+			List<String> args = new ArrayList<String>();
 			
-			
-			String request = in.readLine();	
-			
+			while(line != null)
+			{
+				args.add(line);
+				line = in.readLine();
+			}
 			try {
-				RequestHandler.handle(out, request);
+				RequestHandler.handle(out, args);
 			} catch (RequestException e) 
 			{
 				out.println(e.getCode());
