@@ -1,7 +1,7 @@
 package gr.souperk.ion.properties;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.apache.commons.configuration.Configuration;
+import org.apache.commons.configuration.PropertiesConfiguration;
 
 /**
  * Basic Utility class holding the key for various properties
@@ -15,6 +15,8 @@ import java.util.Map;
 
 public class PropertiesTool
 {
+	public static String DEFAUL_CONF_FILE = "/resources/ion.conf";
+	
 	public static String COMMAND_GET = "command.get";
 	public static String HTTP_VERSION = "http.version";
 	public static String DEFAULT_RETURN = "default.return";
@@ -24,19 +26,23 @@ public class PropertiesTool
 	public static String CODE_400 = "code.400";
 	public static String CODE_404 = "code.404";
 	
-	public static Map<String, String> defaults()
+	/**
+	 * 
+	 * @return The default properties for the server.
+	 */
+	public static Configuration defaults()
 	{
-		Map<String, String> props = new HashMap<String, String>();
+		Configuration conf = new PropertiesConfiguration();
 		
-		props.put(COMMAND_GET, "GET");
-		props.put(HTTP_VERSION, "HTTP/1.1");
-		props.put(DEFAULT_RETURN, "index.html");
+		conf.addProperty(COMMAND_GET, "GET");
+		conf.addProperty(HTTP_VERSION, "HTTP/1.1");
+		conf.addProperty(DEFAULT_RETURN, "index.html");
   
-		props.put(CODE_200, "resources/200.html");
+		conf.addProperty(CODE_200, "resources/200.html");
 		
-		props.put(CODE_400, "resources/400.html");
-		props.put(CODE_404, "resources/404.html");
+		conf.addProperty(CODE_400, "resources/400.html");
+		conf.addProperty(CODE_404, "resources/404.html");
 
-		return props;
+		return conf;
 	}
 }
