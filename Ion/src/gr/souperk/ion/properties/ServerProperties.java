@@ -1,16 +1,22 @@
 package gr.souperk.ion.properties;
 
-import java.util.Map;
+import java.io.File;
+
+import org.apache.commons.configuration.CompositeConfiguration;
+import org.apache.commons.configuration.ConfigurationException;
+import org.apache.commons.configuration.PropertiesConfiguration;
 
 /**
  * {@code ServerProperties} holds the main properties of the server
  * like the port it runs on. 
  *
  * <br></br>
- * It is designed with the singleton pattern which enables it to create only one
- * instance avoiding any unnecessary reading.
+ * It is designed with the singleton pattern enabling to load the properties
+ * only once in a runtime. With the first call of {@code ServerProperties.getInstance()} 
+ * it creates a static instance of class that is never closed till System exit.
  * 
  * <br></br>
+ * Use {@code ServerProperties.getInstance().getProperty(String)} to get the property for the key.
  * 
  * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
  *
@@ -18,19 +24,51 @@ import java.util.Map;
 //TODO Finish the javadoc
 //TODO Change it to apache configuration
 public class ServerProperties 
-{
+{	
+	/** The active instance of {@code ServerProperties}*/
 	private static ServerProperties instace;
 	
-	private Map<String, String> props;
+	/** Holds all loaded configuration.*/
+	private CompositeConfiguration conf;
 	
+	/**
+	 * Constructor of {@code ServerProperties}. Creates a {@code CompositeConfiguration} 
+	 * and then adds default and file properties
+	 * <br></br>
+	 * Note : {@code CompositeConfiguration.getProperty(String ,boolean)} returns
+	 * the first matched property in the added Configuration while the matching order 
+	 * is the same of addition order. So add Configurations with priority order.
+	 * 
+	 */
 	private ServerProperties()
 	{
-		props = PropertiesTool.defaults();
+		conf = new CompositeConfiguration();
+		
+		try 
+		{
+			conf.addConfiguration(loadProperties());
+		} catch (ConfigurationException e) 
+		{
+			//TODO log the failed attempt to open file configuration
+		}
+		
+		conf.addConfiguration(PropertiesTool.defaults());
+
+		
 	}	
 	
 	/**
-	 * 
-	 * @return the instace of {@code ServerProperties} if it exists else it creates a new one.
+	 * @return A {@code PropertiesConfiguration} loaded from {@code PropertiesTool.DEFAULT_CONF_FILE}.
+	 * @throws ConfigurationException If error while loading properties file.
+	 */
+	private PropertiesConfiguration loadProperties() 
+			throws ConfigurationException
+	{
+		return new PropertiesConfiguration(new File(PropertiesTool.DEFAUL_CONF_FILE));
+	}
+	
+	/**
+	 * @return An active instance of {@code ServerProperties}. If one does not exist it creates an new one first.
 	 */
 	public static ServerProperties getInstance()
 	{
@@ -39,13 +77,12 @@ public class ServerProperties
 		return instace;
 	}
 	
+	/**
+	 * @param key The key for the property.
+	 * @return Gives the property for the wanted key.
+	 */
 	public String getProperty(String key)
 	{
-		return props.get(key);
-	}
-	
-	public int getInt(String key)
-	{
-		return Integer.parseInt(getProperty(key));
+		return conf.getString(key);
 	}
 }
