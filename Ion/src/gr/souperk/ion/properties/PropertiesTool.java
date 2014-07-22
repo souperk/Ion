@@ -12,7 +12,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  */
 
 //TODO Finish javadoc
-
+//TODO ADD more HTTP codes
 public class PropertiesTool
 {
 	public static String DEFAUL_CONF_FILE = "/resources/ion.conf";
@@ -21,9 +21,13 @@ public class PropertiesTool
 	public static String HTTP_VERSION = "http.version";
 	public static String DEFAULT_RETURN = "default.return";
 	
+	/** HTTP success code*/
 	public static String CODE_200 = "code.200";
 
+	/** HTTP bad request code*/
 	public static String CODE_400 = "code.400";
+	
+	/** HTTP not found code*/
 	public static String CODE_404 = "code.404";
 	
 	/**

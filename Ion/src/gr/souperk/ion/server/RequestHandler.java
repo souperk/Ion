@@ -9,10 +9,16 @@ import java.io.PrintWriter;
 
 import org.apache.commons.io.FileUtils;
 
+/**
+ * 
+ * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ *
+ */
+
 public class RequestHandler
 {
 	public static void handle(PrintWriter out, String request)
-		throws InvalidRequestException, IOException
+		throws RequestException, IOException
 	{
 		String args[] = request.split(" ");
 		
@@ -20,7 +26,7 @@ public class RequestHandler
 				!args[0].equals(ServerProperties.getInstance().getProperty(COMMAND_GET)) ||
 				!args[2].equals(ServerProperties.getInstance().getProperty(HTTP_VERSION)))
 		{
-			throw new InvalidRequestException(400);
+			throw new RequestException(400);
 		}
 		
 		if(args[1].endsWith("/"))
@@ -38,7 +44,7 @@ public class RequestHandler
 			return ;
 		}else
 		{
-			throw new InvalidRequestException(404);
+			throw new RequestException(404);
 		}
 	}
 	

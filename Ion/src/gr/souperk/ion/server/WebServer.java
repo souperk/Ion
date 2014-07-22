@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * 
+ * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ *
+ */
 public class WebServer
 {
 	/** Status for stopping the main loop and closing the server after all 
