@@ -18,11 +18,9 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * <br></br>
  * Use {@code ServerProperties.getInstance().getProperty(String)} to get the property for the key.
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos
  *
  */
-//TODO Finish the javadoc
-//TODO Change it to apache configuration
 public class ServerProperties 
 {	
 	/** The active instance of {@code ServerProperties}*/
@@ -36,7 +34,7 @@ public class ServerProperties
 	 * and then adds default and file properties
 	 * <br></br>
 	 * Note : {@code CompositeConfiguration.getProperty(String ,boolean)} returns
-	 * the first matched property in the added Configuration while the matching order 
+	 * the first matched property in the added {@code Configuration}s while the matching order 
 	 * is the same of addition order. So add Configurations with priority order.
 	 * 
 	 */

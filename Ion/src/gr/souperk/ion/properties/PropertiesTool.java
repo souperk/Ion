@@ -7,7 +7,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * Basic Utility class holding the key for various properties
  * and holds the hardcoded default properties.
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos
  *
  */
 
@@ -17,6 +17,9 @@ public class PropertiesTool
 {
 	public static String DEFAUL_CONF_FILE = "/resources/ion.conf";
 	
+	/** Port to start Server on*/
+	public static String PORT = "port";
+
 	public static String COMMAND_GET = "command.get";
 	public static String HTTP_VERSION = "http.version";
 	public static String DEFAULT_RETURN = "default.return";
@@ -30,6 +33,7 @@ public class PropertiesTool
 	/** HTTP not found code*/
 	public static String CODE_404 = "code.404";
 	
+	
 	/**
 	 * 
 	 * @return The default properties for the server.
@@ -37,6 +41,8 @@ public class PropertiesTool
 	public static Configuration defaults()
 	{
 		Configuration conf = new PropertiesConfiguration();
+
+		conf.addProperty(PORT, "1026");
 		
 		conf.addProperty(COMMAND_GET, "GET");
 		conf.addProperty(HTTP_VERSION, "HTTP/1.1");

@@ -4,13 +4,20 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos
  *
  */
 public class WebServer
 {
+	
+	/** Logger WebServer*/
+	private static Logger log = LogManager.getLogger(WebServer.class);
+	
 	/** Status for stopping the main loop and closing the server after all 
 	 * client sockets are closed.*/
 	public static final int SERVER_STOP 		= 1;
@@ -43,35 +50,44 @@ public class WebServer
 	 */
 	public void start()
 	{
-		ServerSocket srvSocket;
-		boolean running = true;
-		status = SERVER_RUNNING;
+		ServerSocket srv;
+		boolean flag = true;
+		
+		setStatus(SERVER_RUNNING);;
 		
 		try {
-			srvSocket = new ServerSocket(port);
+			srv = new ServerSocket(port);
 			
-			while(running)
+			while(flag)
 			{
 				switch (status) {
 				case SERVER_STOP:
-					running = false;
+					flag = false;
 					break;
+				
 				case SERVER_FORCESTOP:
 					System.exit(1);
 					break;
+				
 				case SERVER_PAUSE:
 					break;
+					
 				case SERVER_RUNNING: //TODO do something about never closing client sockets.
-					Socket clientSocket = srvSocket.accept();
+					Socket clientSocket = srv.accept();
+					
+					log.info("Connection established with " + clientSocket.getLocalAddress().toString() + ".");
 					
 					new ServerThread(clientSocket).start();
 					break;
 				}
 			}
+
+			srv.close();
 			
 		} catch (IOException e) {
-			e.printStackTrace();
+			//TODO Handle Exception
 		}
+		
 	}
 	
 	/**
@@ -84,6 +100,21 @@ public class WebServer
 	
 	public void setStatus(int status)
 	{
+		switch (status) {
+		case SERVER_STOP:
+			log.debug("Server Status changed to SERVER_STOP.");
+			break;
+		case SERVER_FORCESTOP:
+			log.debug("Server Status changed to SERVER_FORCESTOP.");
+			break;
+		case SERVER_PAUSE:
+			log.debug("Server Status changed to SERVER_PAUSE.");
+			break;
+		case SERVER_RUNNING:
+			log.debug("Server Status changed to SERVER_RUNNING.");
+			break;
+		}
+		
 		this.status = status;
 	}
 }

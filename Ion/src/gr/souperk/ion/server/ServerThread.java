@@ -5,18 +5,23 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * A {@code Thread} for communicating with the client.
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos
  *
  */
 public class ServerThread 
 	extends Thread
 {
+	
+	/** Logger ServerThread*/
+	private static Logger log = LogManager.getLogger(ServerThread.class);
+	
 	private Socket clientSocket ;
 	
 	public ServerThread(Socket clientSocket) 
@@ -32,24 +37,34 @@ public class ServerThread
 	public void run() 
 	{
 		try {
+			
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-			PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
+			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 		
 			String line = in.readLine();
-			List<String> args = new ArrayList<String>();
+			HttpRequest request = new HttpRequest(line);
 			
-			while(line != null)
+			String address = clientSocket.getLocalAddress().toString();
+			log.debug("Reading client " + address + " request.");
+			
+			while(!line.isEmpty())
 			{
-				args.add(line);
+				log.debug("Got line " + line + " from client " + address + ".");
+				
+				request.addHeader(line);
 				line = in.readLine();
 			}
+			
 			try {
-				RequestHandler.handle(out, args);
+				
+				log.debug("Proccessing client " + address + " request.");
+				RequestHandler.handle(out, request);
+			
 			} catch (RequestException e) 
 			{
 				out.println(e.getCode());
+				log.info("Got code " + e.getCode() + " for client " + address + " request");
 			}
-			out.flush();
 			
 			in.close();
 			out.close();

@@ -9,19 +9,33 @@ import java.io.PrintWriter;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos 
  *
  */
 
 public class RequestHandler
 {
-	public static void handle(PrintWriter out, List<String> args) 
+	
+	
+	/** Logger RequestHandler*/
+	private static Logger log = LogManager.getLogger(RequestHandler.class);
+	
+	//TODO Write javadoc
+	public static void handle(PrintWriter out, HttpRequest request) 
 			throws RequestException, IOException
 	{
-		handle(out, args.get(0));
+		if(request.headsCount() <= 0)
+		{
+			log.debug("empty request returning code 400");
+			throw new RequestException(400);
+		}
+			
+		handle(out, request.getCommand());
 	}
 	
 	/**
@@ -62,6 +76,15 @@ public class RequestHandler
 		}
 	}
 	
+	/**
+	 * Convenience method for printing files.
+	 * <br></br>
+	 * Note : along with file HTTP 200 code is printed.
+	 * 
+	 * @param out The {@code PrintWriter} 
+	 * @param f file to print
+	 * @throws IOException if {@code FileUtills} is unable to read file
+	 */
 	private static boolean printFile(PrintWriter out, File f) 
 			throws IOException
 	{

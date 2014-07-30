@@ -3,7 +3,7 @@ package gr.souperk.ion.server;
 /**
  * Exception for managing exceptions for the HTTP request.
  * 
- * @author Kostas "souperk" Alexopoulos (kostas@alcinia.net)
+ * @author Kostas "souperk" Alexopoulos
  *
  */
 public class RequestException 
