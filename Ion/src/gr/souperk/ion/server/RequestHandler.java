@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
  * @author Kostas "souperk" Alexopoulos 
  *
  */
-
+//TODO write javadoc
 public class RequestHandler
 {
 	
@@ -24,6 +24,13 @@ public class RequestHandler
 	/** Logger RequestHandler*/
 	private static Logger log = LogManager.getLogger(RequestHandler.class);
 	
+	/**
+	 * 
+	 * @param out client output stream/ 
+	 * @param request client request.
+	 * @throws RequestException if request seems invalid.
+	 * @throws IOException on problems while communicating with client.
+	 */
 	//TODO Write javadoc
 	public static void handle(PrintWriter out, HttpRequest request) 
 			throws RequestException, IOException
@@ -33,9 +40,23 @@ public class RequestHandler
 			log.debug("empty request returning code 400");
 			throw new RequestException(400);
 		}
+		
+		if(isLocalRequest(request))
+		{
+			log.debug("Handling local request.");
+			handleLocalRequest(out, request.getCommand());
+		}else
+		{
+			log.debug("Proxing HTTP request.");
+			proxyRequest(out, request);
+		}
 			
-		handle(out, request.getCommand());
 	}
+	
+	public static void proxyRequest(PrintWriter out, HttpRequest request)
+	{
+	}
+	
 	
 	/**
 	 * 
@@ -44,7 +65,7 @@ public class RequestHandler
 	 * @throws RequestException
 	 * @throws IOException
 	 */
-	public static void handle(PrintWriter out, String request)
+	public static void handleLocalRequest(PrintWriter out, String request)
 		throws RequestException, IOException
 	{
 		String args[] = request.split(" ");
@@ -99,5 +120,21 @@ public class RequestHandler
 		}
 		
 		return false;
+	}
+	
+	/**
+	 * 
+	 * @param request the HTTP request.
+	 * @return false if server should proxy the request to another server else true.
+	 */
+	//TODO create the actual method
+	public static boolean isLocalRequest(HttpRequest request)
+	{
+		String host = request.getHeader("HOST"); //TODO create fields for HTTP headers.
+		
+		if(host.isEmpty())
+			return true;
+		
+		return true;
 	}
 }

@@ -47,7 +47,7 @@ public class ServerThread
 			String address = clientSocket.getLocalAddress().toString();
 			log.debug("Reading client " + address + " request.");
 			
-			while(!line.isEmpty())
+			while(line != null && !line.isEmpty())
 			{
 				log.debug("Got line " + line + " from client " + address + ".");
 				
