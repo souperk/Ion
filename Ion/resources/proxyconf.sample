@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<proxy>
+	<host id="ID"> 
+	
+		<target port="80" >target_url</target>
+		
+	
+		<urls>
+			<url>test.p4u.gr</url>
+			<url>*.test.p4u.gr</url>			
+		</urls>
+		
+		
+	</host>
+</proxy>

@@ -29,7 +29,6 @@ public class ServerThread
 		this.clientSocket = clientSocket ;
 	}
 	
-	//TODO create compatibility with various HTTP headers.
 	/**
 	 * Reads the client request and prints the server response.
 	 */
@@ -58,10 +57,11 @@ public class ServerThread
 			try {
 				
 				log.debug("Proccessing client " + address + " request.");
-				RequestHandler.handle(out, request);
+				RequestHandlerFactory.getHandler(request).handle(out, request);
 			
 			} catch (RequestException e) 
 			{
+				//TODO print fancy stuff for codes.
 				out.println(e.getCode());
 				log.info("Got code " + e.getCode() + " for client " + address + " request");
 			}

@@ -1,4 +1,4 @@
-package gr.souperk.ion.properties;
+package gr.souperk.ion.conf;
 
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.PropertiesConfiguration;
