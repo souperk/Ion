@@ -19,12 +19,17 @@ import org.apache.logging.log4j.Logger;
 //TODO write javadoc
 //TODO add more compatibility with http headers.
 public class LocalRequestHandler
-	implements RequestHandler
+	extends RequestHandler
 {
 	
 	
 	/** Logger RequestHandler*/
 	private static Logger log = LogManager.getLogger(LocalRequestHandler.class);
+	
+	public LocalRequestHandler(HttpRequest request) 
+	{
+		super(request);
+	}
 	
 	/**
 	 * 
@@ -34,12 +39,12 @@ public class LocalRequestHandler
 	 * @throws IOException on problems while communicating with client.
 	 */
 	//TODO Write javadoc
-	public void handle(PrintWriter out, HttpRequest request) 
+	public void handle(PrintWriter out) 
 			throws RequestException
 	{
 		if(request.headsCount() <= 0)
 		{
-			log.debug("empty request returning code 400");
+			log.debug("Invalid request returning code 400.");
 			throw new RequestException(400);
 		}
 		

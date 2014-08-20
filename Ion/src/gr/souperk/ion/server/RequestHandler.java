@@ -2,7 +2,20 @@ package gr.souperk.ion.server;
 
 import java.io.PrintWriter;
 
-public interface RequestHandler
+/**
+ * 
+ * @author Kostas "souperk" Alexopoulos
+ *
+ */
+
+public abstract class RequestHandler
 {
-	public void handle(PrintWriter out, HttpRequest request) throws RequestException;
+	protected HttpRequest request;
+	
+	public RequestHandler(HttpRequest request) 
+	{
+		this.request = request;
+	}
+	
+	public abstract void handle(PrintWriter out) throws RequestException;
 }

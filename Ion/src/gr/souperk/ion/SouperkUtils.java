@@ -16,10 +16,13 @@ public class SouperkUtils
 	 * @param text the text to compare with the pattern.
 	 * @return true if text matches to the pattern else false.
 	 */
-	public static boolean wildcardMatch(String pattern, String text)
+	public static boolean isWildcardMatch(String pattern, String text)
 	{
         String parts[] = pattern.split("\\*");
 
+        if(parts.length == 1)
+        	return pattern.equals(text);
+        
         for (String card : parts)
         {
             int idx = text.indexOf(card);

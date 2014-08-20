@@ -27,5 +27,6 @@ public class Start
 		new WebServer(Integer.parseInt(ServerProperties.getInstance().getProperty(PropertiesTool.PORT))).start();
 
 		log.info("Server Stopping.");
+		
 	}
 }

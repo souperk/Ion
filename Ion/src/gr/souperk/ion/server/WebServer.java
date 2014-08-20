@@ -56,6 +56,7 @@ public class WebServer
 		setStatus(SERVER_RUNNING);;
 		
 		try {
+			log.info("Opening server on port " + port + ".");
 			srv = new ServerSocket(port);
 			
 			while(flag)
@@ -84,8 +85,9 @@ public class WebServer
 
 			srv.close();
 			
-		} catch (IOException e) {
-			//TODO Handle Exception
+		} catch (IOException e) 
+		{
+			log.error("Port " + port + " already occupied.");
 		}
 		
 	}

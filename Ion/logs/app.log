@@ -29,3 +29,344 @@
 2014-24-27 23:24:13.691 [main] INFO  gr.souperk.ion.Start - Server Starting.
 2014-24-27 23:24:26.174 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
 2014-17-30 21:17:23.128 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-21-19 11:21:54.478 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 11:23:01.248 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 11:23:01.291 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 11:23:05.948 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-23-19 11:23:54.622 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 11:23:54.663 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 11:23:56.462 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-25-19 11:25:43.402 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-25-19 11:25:43.445 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-25-19 11:25:43.641 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-27-19 11:27:30.416 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-27-19 11:27:30.459 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-27-19 11:27:30.461 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-27-19 11:27:40.059 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-27-19 11:27:40.101 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-27-19 11:27:41.627 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-27-19 11:27:41.646 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-28-19 11:28:16.286 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-28-19 11:28:16.328 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-28-19 11:28:16.329 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-29-19 11:29:02.354 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-29-19 11:29:02.396 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-29-19 11:29:04.198 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-29-19 11:29:04.217 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-32-19 11:32:19.350 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-32-19 11:32:19.392 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-32-19 11:32:19.394 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-32-19 11:32:19.394 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-32-19 11:32:24.665 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-32-19 11:32:24.706 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-32-19 11:32:25.538 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-32-19 11:32:25.557 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-32-19 11:32:25.626 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-32-19 11:32:25.699 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-32-19 11:32:25.700 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /0:0:0:0:0:0:0:1 request
+2014-32-19 11:32:25.701 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-32-19 11:32:25.702 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /0:0:0:0:0:0:0:1 request
+2014-32-19 11:32:27.952 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-32-19 11:32:27.973 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:32.037 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-33-19 11:33:32.078 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-33-19 11:33:35.283 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:35.301 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-33-19 11:33:35.359 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:41.535 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:41.551 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:45.985 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-33-19 11:33:46.026 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-33-19 11:33:47.337 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-19 11:33:47.357 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-33-19 11:33:47.375 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-35-19 11:35:27.820 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-35-19 11:35:27.876 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-35-19 11:35:27.920 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-35-19 11:35:27.923 [Thread-5] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-35-19 11:35:27.924 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-35-19 11:35:27.926 [Thread-6] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-37-19 11:37:09.189 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:09.265 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:13.462 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:13.502 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:27.052 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:27.054 [Thread-11] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-37-19 11:37:33.590 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:33.591 [Thread-12] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-37-19 11:37:57.271 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-37-19 11:37:57.273 [Thread-13] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-38-19 11:38:00.664 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-41-19 11:41:51.128 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-41-19 11:41:51.169 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-42-19 11:42:12.746 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-43-19 11:43:35.677 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-19 11:43:35.719 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-43-19 11:43:35.720 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-43-19 11:43:35.720 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-43-19 11:43:41.609 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-19 11:43:41.650 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-43-19 11:43:44.900 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-53-19 11:53:40.315 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-53-19 11:53:40.357 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-54-19 11:54:57.458 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-56-19 11:56:16.998 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-56-19 11:56:17.041 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-56-19 11:56:22.348 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-56-19 11:56:33.399 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-56-19 11:56:33.445 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-56-19 11:56:46.550 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-56-19 11:56:46.649 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-56-19 11:56:46.696 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-56-19 11:56:46.698 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-56-19 11:56:46.698 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-56-19 11:56:46.699 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - Got code 404 for client /192.168.1.51 request
+2014-01-19 12:01:10.199 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-01-19 12:01:10.242 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-01-19 12:01:11.781 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-01-19 12:01:11.864 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:16.267 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-02-19 12:02:16.309 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-02-19 12:02:19.664 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:19.749 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:31.626 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-02-19 12:02:31.667 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-02-19 12:02:31.669 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-02-19 12:02:31.669 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-02-19 12:02:35.630 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-02-19 12:02:35.672 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-02-19 12:02:37.160 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:37.246 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:41.283 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-02-19 12:02:41.297 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-04-19 12:04:44.776 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-04-19 12:04:44.817 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-04-19 12:04:52.342 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-05-19 12:05:06.980 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-05-19 12:05:13.357 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-05-19 12:05:58.660 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-06-19 12:06:31.358 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-06-19 12:06:50.078 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-07-19 12:07:09.145 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-07-19 12:07:22.819 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-07-19 12:07:22.850 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-08-19 12:08:09.079 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-08-19 12:08:09.114 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-10-19 12:10:06.398 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-10-19 12:10:14.717 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-12-19 12:12:45.296 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-12-19 12:12:45.339 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-12-19 12:12:47.118 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-12-19 12:12:47.205 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-14-19 12:14:13.858 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-14-19 12:14:13.900 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-14-19 12:14:13.902 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-14-19 12:14:13.902 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-14-19 12:14:18.953 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-14-19 12:14:18.995 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-14-19 12:14:19.248 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-14-19 12:14:19.276 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-14-19 12:14:19.334 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-14-19 12:14:19.335 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-15-19 12:15:18.685 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-19 12:15:18.728 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-15-19 12:15:21.984 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-19 12:15:22.032 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-15-19 12:15:22.409 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-15-19 12:15:22.438 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-15-19 12:15:22.531 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-15-19 12:15:22.533 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-15-19 12:15:44.607 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-19 12:15:44.650 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-15-19 12:15:45.386 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-15-19 12:15:45.414 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-15-19 12:15:45.464 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-15-19 12:15:45.466 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-16-19 12:16:08.146 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-16-19 12:16:08.188 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-16-19 12:16:08.190 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-16-19 12:16:08.190 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-16-19 12:16:15.321 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-16-19 12:16:15.363 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-16-19 12:16:15.514 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-16-19 12:16:15.541 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-16-19 12:16:15.568 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-16-19 12:16:15.569 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-17-19 12:17:43.820 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-17-19 12:17:43.862 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-17-19 12:17:44.779 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-17-19 12:17:44.808 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-17-19 12:17:44.867 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-17-19 12:17:44.869 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-18-19 12:18:50.784 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-18-19 12:18:50.827 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-18-19 12:18:50.828 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-18-19 12:18:50.828 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-18-19 12:18:54.444 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-18-19 12:18:54.485 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-18-19 12:18:54.949 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-18-19 12:18:54.980 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-18-19 12:18:55.027 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-18-19 12:18:55.029 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-19-19 12:19:31.800 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-19-19 12:19:31.845 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-19-19 12:19:32.503 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-19-19 12:19:32.531 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-19-19 12:19:32.595 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-19-19 12:19:32.598 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-21-19 12:21:59.798 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-21-19 12:21:59.845 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-21-19 12:21:59.847 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-21-19 12:21:59.847 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-22-19 12:22:00.448 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-22-19 12:22:00.451 [Thread-3] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-19 12:22:00.489 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-22-19 12:22:00.491 [Thread-4] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-19 12:22:06.359 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-19 12:22:06.407 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-22-19 12:22:07.034 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-22-19 12:22:25.465 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-19 12:22:25.508 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-22-19 12:22:25.510 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-22-19 12:22:25.510 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-22-19 12:22:31.724 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-19 12:22:31.767 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-22-19 12:22:32.106 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-22-19 12:22:32.136 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-19 12:22:32.184 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-22-19 12:22:32.185 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-19 12:22:54.121 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-19 12:22:54.163 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-22-19 12:22:54.165 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-22-19 12:22:54.165 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-22-19 12:22:59.699 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-19 12:22:59.745 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 12:23:00.075 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-23-19 12:23:00.102 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-23-19 12:23:17.137 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 12:23:17.185 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 12:23:17.187 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-23-19 12:23:17.187 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-23-19 12:23:17.925 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-23-19 12:23:17.926 [Thread-2] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-23-19 12:23:24.522 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 12:23:24.565 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 12:23:26.556 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-23-19 12:23:26.582 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-23-19 12:23:53.230 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 12:23:53.273 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 12:23:53.275 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-23-19 12:23:53.275 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-23-19 12:23:57.374 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-23-19 12:23:57.417 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-23-19 12:23:57.957 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /192.168.1.51.
+2014-23-19 12:23:57.986 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-23-19 12:23:57.986 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server target_url on port 80.
+2014-24-19 12:24:00.279 [Thread-1] ERROR gr.souperk.ion.server.ProxyRequestHandler - Unable to connect on server target_url on port 80.
+2014-24-19 12:24:00.279 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /192.168.1.51 request
+2014-25-20 09:25:25.648 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-25-20 09:25:25.804 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-31-20 09:31:33.548 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-31-20 09:31:33.591 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 80.
+2014-31-20 09:31:33.593 [main] ERROR gr.souperk.ion.server.WebServer - Port 80 already occupied.
+2014-31-20 09:31:33.593 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-31-20 09:31:47.537 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-31-20 09:31:47.579 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 80.
+2014-31-20 09:31:47.581 [main] ERROR gr.souperk.ion.server.WebServer - Port 80 already occupied.
+2014-31-20 09:31:47.581 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-31-20 09:31:59.551 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-31-20 09:31:59.594 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-32-20 09:32:04.296 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-33-20 09:33:12.530 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-33-20 09:33:12.572 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-33-20 09:33:13.802 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-35-20 09:35:19.545 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-35-20 09:35:19.588 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-35-20 09:35:20.197 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-35-20 09:35:21.924 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-35-20 09:35:21.925 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /0:0:0:0:0:0:0:1 request
+2014-35-20 09:35:57.535 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-35-20 09:35:57.578 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-37-20 09:37:06.538 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-37-20 09:37:06.585 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-37-20 09:37:42.400 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-39-20 09:39:11.550 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-39-20 09:39:11.593 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-39-20 09:39:11.962 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-39-20 09:39:44.448 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-39-20 09:39:44.448 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-41-20 09:41:01.536 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-41-20 09:41:01.578 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-41-20 09:41:21.500 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-41-20 09:41:36.858 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-41-20 09:41:36.858 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-41-20 09:41:58.554 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-41-20 09:41:58.597 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-42-20 09:42:01.749 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-42-20 09:42:19.685 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-42-20 09:42:19.685 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-43-20 09:43:53.538 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-20 09:43:53.580 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-44-20 09:44:25.009 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-44-20 09:44:43.749 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-44-20 09:44:43.749 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-44-20 09:44:43.899 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading server google.gr on port 80.
+2014-45-20 09:45:09.541 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-45-20 09:45:09.583 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-45-20 09:45:11.297 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-45-20 09:45:22.318 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-45-20 09:45:22.318 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-45-20 09:45:22.380 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading server google.gr on port 80.
+2014-46-20 09:46:02.547 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-46-20 09:46:02.589 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-46-20 09:46:04.026 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-46-20 09:46:22.337 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-46-20 09:46:22.337 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-46-20 09:46:22.401 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading server google.gr on port 80.
+2014-46-20 09:46:59.540 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-46-20 09:46:59.582 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-47-20 09:47:00.604 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-47-20 09:47:16.168 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-47-20 09:47:16.169 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-47-20 09:47:16.238 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-55-20 09:55:00.554 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-55-20 09:55:00.597 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-55-20 09:55:01.551 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-55-20 09:55:01.594 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-55-20 09:55:01.596 [main] ERROR gr.souperk.ion.server.WebServer - Port 1026 already occupied.
+2014-55-20 09:55:01.596 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-55-20 09:55:19.654 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-55-20 09:55:30.486 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-55-20 09:55:30.486 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-55-20 09:55:30.546 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Printinf : Host:google.gr
+2014-55-20 09:55:30.546 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-56-20 09:56:22.554 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-56-20 09:56:22.598 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-56-20 09:56:24.792 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-56-20 09:56:36.326 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-56-20 09:56:36.327 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-56-20 09:56:36.475 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Printing : Host:google.gr
+2014-56-20 09:56:36.476 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-57-20 09:57:14.552 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-57-20 09:57:14.594 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-57-20 09:57:15.081 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-57-20 09:57:28.029 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-57-20 09:57:28.029 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-57-20 09:57:28.094 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-57-20 09:57:28.094 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Printing : Host:google.gr
+2014-57-20 09:57:28.094 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-59-20 09:59:42.550 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-59-20 09:59:42.592 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-59-20 09:59:43.044 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-59-20 09:59:58.827 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-59-20 09:59:58.827 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-00-20 10:00:35.550 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-00-20 10:00:35.592 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-00-20 10:00:35.781 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-00-20 10:00:47.837 [Thread-1] INFO  gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-00-20 10:00:47.837 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-15-20 10:15:32.583 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-20 10:15:32.626 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1026.
+2014-15-20 10:15:36.913 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-15-20 10:15:47.835 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-15-20 10:15:48.065 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Connection with server google.gr on port 80.

@@ -22,11 +22,14 @@ public class HttpRequest
 	
 	public void addHeader(String line)
 	{
-		String header = line.substring(0,line.indexOf(':'));
-		String value = line.substring(line.indexOf(':')+1);
 		
-		
-		addHeader(header, value);
+		if(!line.trim().isEmpty())
+		{
+			String header = line.substring(0,line.indexOf(':'));
+			String value = line.substring(line.indexOf(':')+1);
+				
+			addHeader(header, value);
+		}
 	}
 	
 	public void addHeader(String header, String value)
@@ -37,6 +40,11 @@ public class HttpRequest
 	public String getHeader(String header)
 	{
 		return heads.get(header);
+	}
+	
+	public Map<String, String> getHeaders()
+	{
+		return heads;
 	}
 	
 	public String getCommand()

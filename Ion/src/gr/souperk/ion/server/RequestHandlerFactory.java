@@ -1,5 +1,10 @@
 package gr.souperk.ion.server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import gr.souperk.ion.conf.ProxyConfiguration;
+
 /**
  * 
  * @author Kostas "souperk" Alexopoulos
@@ -7,6 +12,11 @@ package gr.souperk.ion.server;
  */
 public class RequestHandlerFactory 
 {
+	
+	/** Logger RequestHandlerFactory*/
+	private static Logger log = LogManager
+			.getLogger(RequestHandlerFactory.class);
+	
 	
 	/**
 	 * 
@@ -16,6 +26,17 @@ public class RequestHandlerFactory
 	public static RequestHandler getHandler(HttpRequest request)
 	{
 		RequestHandler handler = null;
+			
+		if(ProxyConfiguration.getInstance().exists(request.getHeader("Host")))
+		{
+			handler = new ProxyRequestHandler(request);
+			log.debug("handler set to ProxyRequestHandler");
+		}
+		else
+		{
+			handler = new LocalRequestHandler(request);
+			log.debug("handler set to LocalRequestHandler");
+		}
 		
 		return handler;
 	}

@@ -36,6 +36,8 @@ public class ServerThread
 	public void run() 
 	{
 		try {
+
+			String address = clientSocket.getLocalAddress().toString();
 			
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -43,21 +45,20 @@ public class ServerThread
 			String line = in.readLine();
 			HttpRequest request = new HttpRequest(line);
 			
-			String address = clientSocket.getLocalAddress().toString();
-			log.debug("Reading client " + address + " request.");
+			log.debug("Reading from client " + address + ".");
 			
 			while(line != null && !line.isEmpty())
 			{
-				log.debug("Got line " + line + " from client " + address + ".");
+				log.debug("Got line " + line + " [" + address + "].");
+				line = in.readLine();
 				
 				request.addHeader(line);
-				line = in.readLine();
 			}
 			
 			try {
 				
 				log.debug("Proccessing client " + address + " request.");
-				RequestHandlerFactory.getHandler(request).handle(out, request);
+				RequestHandlerFactory.getHandler(request).handle(out);
 			
 			} catch (RequestException e) 
 			{

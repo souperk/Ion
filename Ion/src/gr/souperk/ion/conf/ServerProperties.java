@@ -5,6 +5,8 @@ import java.io.File;
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * {@code ServerProperties} holds the main properties of the server
@@ -23,6 +25,10 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  */
 public class ServerProperties 
 {	
+	
+	/** Logger ServerProperties*/
+	private static Logger log = LogManager.getLogger(ServerProperties.class);
+	
 	/** The active instance of {@code ServerProperties}*/
 	private static ServerProperties instace;
 	
@@ -47,11 +53,11 @@ public class ServerProperties
 			conf.addConfiguration(loadProperties());
 		} catch (ConfigurationException e) 
 		{
+			log.warn("Unable to open configuration file (resources/ion.conf)");
 			//TODO log the failed attempt to open file configuration
 		}
 		
 		conf.addConfiguration(PropertiesTool.defaults());
-
 		
 	}	
 	
