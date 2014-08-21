@@ -1,6 +1,7 @@
 package gr.souperk.ion.conf;
 
 import java.io.File;
+import java.util.Iterator;
 
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
@@ -54,7 +55,6 @@ public class ServerProperties
 		} catch (ConfigurationException e) 
 		{
 			log.warn("Unable to open configuration file (resources/ion.conf)");
-			//TODO log the failed attempt to open file configuration
 		}
 		
 		conf.addConfiguration(PropertiesTool.defaults());
@@ -89,4 +89,5 @@ public class ServerProperties
 	{
 		return conf.getString(key);
 	}
+
 }

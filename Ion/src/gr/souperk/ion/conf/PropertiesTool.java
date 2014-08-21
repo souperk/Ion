@@ -15,7 +15,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 //TODO ADD more HTTP codes
 public class PropertiesTool
 {
-	public static String DEFAUL_CONF_FILE = "/resources/ion.conf";
+	public static String DEFAUL_CONF_FILE = "conf/ion.conf";
 	
 	/** Port to start Server on*/
 	public static String PORT = "port";
