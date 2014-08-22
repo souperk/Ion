@@ -45,7 +45,7 @@ public class ServerThread
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 		
 			String line = in.readLine();
-			HttpRequest request = new HttpRequest(line);
+			HttpRequest request = new HttpRequest();
 			
 			log.debug(address + "Reading.");
 			
@@ -54,7 +54,7 @@ public class ServerThread
 				log.debug(address + "Got line " + line + ".");
 				line = in.readLine();
 				
-				request.addHeader(line);
+				request.add(line);
 			}
 			
 			try {

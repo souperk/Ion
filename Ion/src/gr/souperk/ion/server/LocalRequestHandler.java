@@ -43,7 +43,7 @@ public class LocalRequestHandler
 	public void handle(PrintWriter out) 
 			throws RequestException
 	{
-		if(request.headsCount() <= 0)
+		if(request.isEmpty())
 		{
 			log.debug("Invalid request returning code 400.");
 			throw new RequestException(400);

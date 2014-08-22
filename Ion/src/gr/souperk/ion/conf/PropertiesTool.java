@@ -7,6 +7,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * Basic Utility class holding the key for various properties
  * and holds the hardcoded default properties.
  * 
+ * @since 1.1.0
  * @author Kostas "souperk" Alexopoulos
  *
  */

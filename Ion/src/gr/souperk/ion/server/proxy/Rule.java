@@ -1,24 +1,32 @@
 package gr.souperk.ion.server.proxy;
 
-import gr.souperk.ion.SouperkUtils;
+import gr.souperk.ion.server.http.HttpHeader;
+import gr.souperk.ion.server.http.HttpRequest;
 
 //TODO rename this class.
+//TODO turn this class from a String holder to a Rule holder. Note first decide what is a Rule.
 public class Rule 
 {
-	private String url;
+	/** The HttpHeader the rule is for*/
+	private HttpHeader header;
 	
-	public Rule(String url) 
+	/** The expected value for the header.*/
+	private String expectedValue;
+	
+	/**
+	 * 
+	 * @param header the HttpHeader the rule is for.
+	 * @param expectedValue the expected value for the header.
+	 */
+	public Rule(HttpHeader header, String expectedValue) 
 	{
-		this.url = url;
+		this.header = header;
+		this.expectedValue = expectedValue;
 	}
 	
-	public String getURL()
+	public boolean isValid(HttpRequest request)
 	{
-		return this.url;
+		return false;
 	}
 	
-	public boolean meetsRule(String url)
-	{
-		return SouperkUtils.isWildcardMatch(this.url, url);
-	}
 }

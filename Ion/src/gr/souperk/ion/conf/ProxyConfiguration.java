@@ -14,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * 
+ * @since 1.3
  * @author Kostas "souperk" Alexopoulos
  *
  */
