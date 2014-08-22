@@ -1,7 +1,13 @@
 package gr.souperk.ion.server.proxy;
 
+import gr.souperk.ion.server.http.HttpRequest;
+
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class Host 
 {
@@ -9,17 +15,42 @@ public class Host
 	private int port;
 	
 	private List<Rule> rules;
+	private Map<String, String> heads;
 	                                
 	public Host(String address, int port) 
 	{
 		this.address = address;
 		this.port = port;
 		this.rules = new ArrayList<Rule>();
+		this.heads = new HashMap<String, String>();
+	}
+	
+	public String alertHeader(String header)
+	{
+		
+		return null;
 	}
 	
 	public void addRule(Rule r)
 	{
 		rules.add(r);
+	}
+	
+	public void addHeader(String key, String value)
+	{
+		heads.put(key, value);
+	}
+	
+	public void changeRequest(HttpRequest request)
+	{
+		Iterator<Entry<String, String>> i = heads.entrySet().iterator();
+		
+		while(i.hasNext())
+		{
+			Entry<String, String> e = i.next();
+			request.addHeader(e.getKey(), e.getValue());
+			i.remove();
+		}
 	}
 	
 	public boolean isValid(String url)

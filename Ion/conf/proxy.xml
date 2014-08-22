@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <proxy>
-	<host id="test.p4u.gr"> 
-	
-		<target port="80" >192.168.1.36</target>
-		
-	
-		<urls>
-			<url>test.p4u.gr</url>
-			<url>*.test.p4u.gr</url>			
-		</urls>
-		
-		
-	</host>
 	
 	<host id="mygoogle.gr">
 		
 		<target port="80">google.gr</target>
 		
 		<urls>
-			<url>google.gr</url>
+			<url>test.p4u.gr</url>
 		</urls>
+
+		<headers>
+			<header id="Host">google.gr</header>
+		</headers>
 		
 	</host>
 	

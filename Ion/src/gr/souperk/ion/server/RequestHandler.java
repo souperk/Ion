@@ -1,5 +1,7 @@
 package gr.souperk.ion.server;
 
+import gr.souperk.ion.server.http.HttpRequest;
+
 import java.io.PrintWriter;
 
 /**

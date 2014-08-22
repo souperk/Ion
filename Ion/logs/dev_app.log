@@ -1,0 +1,327 @@
+2014-00-21 21:00:18.593 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-00-21 21:00:18.640 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-00-21 21:00:18.640 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-00-21 21:00:23.722 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-00-21 21:00:23.770 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-00-21 21:00:23.771 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-00-21 21:00:29.338 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-00-21 21:00:29.341 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-00-21 21:00:29.341 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-00-21 21:00:29.341 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-00-21 21:00:29.341 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-00-21 21:00:29.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-00-21 21:00:29.365 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-00-21 21:00:29.365 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-00-21 21:00:29.454 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-00-21 21:00:29.455 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Language: en-US,en;q=0.5
+2014-00-21 21:00:29.455 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Host: test.p4u.gr:1027
+2014-00-21 21:00:29.456 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Encoding: gzip, deflate
+2014-00-21 21:00:29.456 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : DNT: 1
+2014-00-21 21:00:29.456 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-00-21 21:00:29.457 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Connection: keep-alive
+2014-00-21 21:00:29.457 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-00-21 21:00:29.457 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-00-21 21:00:29.607 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - HTTP/1.1 302 Found
+2014-00-21 21:00:29.607 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Location: http://www.google.com/
+2014-00-21 21:00:29.607 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Cache-Control: private
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Content-Type: text/html; charset=UTF-8
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - X-Content-Type-Options: nosniff
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Date: Thu, 21 Aug 2014 18:00:29 GMT
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Server: sffe
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Content-Length: 219
+2014-00-21 21:00:29.608 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - X-XSS-Protection: 1; mode=block
+2014-00-21 21:00:29.609 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Alternate-Protocol: 80:quic
+2014-00-21 21:00:29.609 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Connection with server google.gr on port 80.
+2014-08-21 21:08:27.724 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-08-21 21:08:27.772 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-08-21 21:08:27.772 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-08-21 21:08:33.545 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:33.549 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-08-21 21:08:33.549 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-08-21 21:08:33.549 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-08-21 21:08:33.549 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-08-21 21:08:33.549 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-08-21 21:08:33.550 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-08-21 21:08:33.550 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-08-21 21:08:33.550 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-08-21 21:08:33.550 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-08-21 21:08:33.550 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-08-21 21:08:33.571 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-08-21 21:08:33.571 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-08-21 21:08:33.733 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-08-21 21:08:33.734 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Language: en-US,en;q=0.5
+2014-08-21 21:08:33.734 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Host: test.p4u.gr:1027
+2014-08-21 21:08:33.734 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Encoding: gzip, deflate
+2014-08-21 21:08:33.735 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : DNT: 1
+2014-08-21 21:08:33.735 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-08-21 21:08:33.735 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Connection: keep-alive
+2014-08-21 21:08:33.736 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-08-21 21:08:33.736 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-08-21 21:08:34.292 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line HTTP/1.1 302 Foundfrom server google.gr on port 80.
+2014-08-21 21:08:34.292 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Location: http://www.google.com/from server google.gr on port 80.
+2014-08-21 21:08:34.293 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Cache-Control: privatefrom server google.gr on port 80.
+2014-08-21 21:08:34.293 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Type: text/html; charset=UTF-8from server google.gr on port 80.
+2014-08-21 21:08:34.293 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-Content-Type-Options: nosnifffrom server google.gr on port 80.
+2014-08-21 21:08:34.294 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Date: Thu, 21 Aug 2014 18:08:34 GMTfrom server google.gr on port 80.
+2014-08-21 21:08:34.294 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Server: sffefrom server google.gr on port 80.
+2014-08-21 21:08:34.294 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Length: 219from server google.gr on port 80.
+2014-08-21 21:08:34.294 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-XSS-Protection: 1; mode=blockfrom server google.gr on port 80.
+2014-08-21 21:08:34.295 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Alternate-Protocol: 80:quicfrom server google.gr on port 80.
+2014-08-21 21:08:55.739 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-08-21 21:08:55.787 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-08-21 21:08:55.787 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-08-21 21:08:56.339 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:56.342 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-08-21 21:08:56.343 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-08-21 21:08:56.343 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-08-21 21:08:56.343 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-08-21 21:08:56.343 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-08-21 21:08:56.343 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-08-21 21:08:56.344 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-08-21 21:08:56.344 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-08-21 21:08:56.344 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-08-21 21:08:56.344 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Cache-Control: max-age=0 [/127.0.0.1].
+2014-08-21 21:08:56.344 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-08-21 21:08:56.366 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-08-21 21:08:56.367 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-08-21 21:08:56.464 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-08-21 21:08:56.464 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Language: en-US,en;q=0.5
+2014-08-21 21:08:56.465 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Host: test.p4u.gr:1027
+2014-08-21 21:08:56.465 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Encoding: gzip, deflate
+2014-08-21 21:08:56.465 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : DNT: 1
+2014-08-21 21:08:56.465 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-08-21 21:08:56.466 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Connection: keep-alive
+2014-08-21 21:08:56.466 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-08-21 21:08:56.466 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Cache-Control: max-age=0
+2014-08-21 21:08:56.467 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-08-21 21:08:57.024 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line HTTP/1.1 302 Foundfrom server google.gr on port 80.
+2014-08-21 21:08:57.024 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Location: http://www.google.com/from server google.gr on port 80.
+2014-08-21 21:08:57.025 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Cache-Control: privatefrom server google.gr on port 80.
+2014-08-21 21:08:57.025 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Type: text/html; charset=UTF-8from server google.gr on port 80.
+2014-08-21 21:08:57.025 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-Content-Type-Options: nosnifffrom server google.gr on port 80.
+2014-08-21 21:08:57.026 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Date: Thu, 21 Aug 2014 18:08:56 GMTfrom server google.gr on port 80.
+2014-08-21 21:08:57.026 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Server: sffefrom server google.gr on port 80.
+2014-08-21 21:08:57.026 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Length: 219from server google.gr on port 80.
+2014-08-21 21:08:57.026 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-XSS-Protection: 1; mode=blockfrom server google.gr on port 80.
+2014-08-21 21:08:57.027 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Alternate-Protocol: 80:quicfrom server google.gr on port 80.
+2014-08-21 21:08:59.043 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:59.044 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-08-21 21:08:59.044 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-08-21 21:08:59.044 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-08-21 21:08:59.045 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-08-21 21:08:59.045 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-08-21 21:08:59.045 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-08-21 21:08:59.045 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-08-21 21:08:59.046 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-08-21 21:08:59.046 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-08-21 21:08:59.046 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Got line Cache-Control: max-age=0 [/127.0.0.1].
+2014-08-21 21:08:59.047 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-08-21 21:08:59.047 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-08-21 21:08:59.047 [Thread-2] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-08-21 21:08:59.201 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-08-21 21:08:59.202 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Language: en-US,en;q=0.5
+2014-08-21 21:08:59.202 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Host: test.p4u.gr:1027
+2014-08-21 21:08:59.203 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept-Encoding: gzip, deflate
+2014-08-21 21:08:59.203 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : DNT: 1
+2014-08-21 21:08:59.203 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-08-21 21:08:59.204 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Connection: keep-alive
+2014-08-21 21:08:59.204 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-08-21 21:08:59.205 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : Cache-Control: max-age=0
+2014-08-21 21:08:59.205 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Reading from server google.gr on port 80.
+2014-08-21 21:08:59.643 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line HTTP/1.1 302 Foundfrom server google.gr on port 80.
+2014-08-21 21:08:59.644 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Location: http://www.google.com/from server google.gr on port 80.
+2014-08-21 21:08:59.644 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Cache-Control: privatefrom server google.gr on port 80.
+2014-08-21 21:08:59.644 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Type: text/html; charset=UTF-8from server google.gr on port 80.
+2014-08-21 21:08:59.645 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-Content-Type-Options: nosnifffrom server google.gr on port 80.
+2014-08-21 21:08:59.645 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Date: Thu, 21 Aug 2014 18:08:59 GMTfrom server google.gr on port 80.
+2014-08-21 21:08:59.645 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Server: sffefrom server google.gr on port 80.
+2014-08-21 21:08:59.646 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Length: 219from server google.gr on port 80.
+2014-08-21 21:08:59.646 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-XSS-Protection: 1; mode=blockfrom server google.gr on port 80.
+2014-08-21 21:08:59.647 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Alternate-Protocol: 80:quicfrom server google.gr on port 80.
+2014-13-21 21:13:35.726 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-13-21 21:13:35.773 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-13-21 21:13:35.773 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-13-21 21:13:38.646 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-21 21:13:38.649 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-13-21 21:13:38.650 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Cache-Control: max-age=0 [/127.0.0.1].
+2014-13-21 21:13:38.651 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-13-21 21:13:38.674 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-13-21 21:13:38.675 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to [server@google.gr:80].
+2014-13-21 21:13:38.775 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Printing : GET / HTTP/1.1
+2014-13-21 21:13:38.776 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Language: en-US,en;q=0.5
+2014-13-21 21:13:38.776 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Host: test.p4u.gr:1027
+2014-13-21 21:13:38.777 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Encoding: gzip, deflate
+2014-13-21 21:13:38.777 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : DNT: 1
+2014-13-21 21:13:38.777 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-13-21 21:13:38.777 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Connection: keep-alive
+2014-13-21 21:13:38.778 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-13-21 21:13:38.778 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Cache-Control: max-age=0
+2014-13-21 21:13:38.778 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Reading from [server@google.gr:80].
+2014-13-21 21:13:38.942 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line HTTP/1.1 302 Found from [server@google.gr:80].
+2014-13-21 21:13:38.942 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Location: http://www.google.com/ from [server@google.gr:80].
+2014-13-21 21:13:38.942 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Cache-Control: private from [server@google.gr:80].
+2014-13-21 21:13:38.943 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Type: text/html; charset=UTF-8 from [server@google.gr:80].
+2014-13-21 21:13:38.943 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-Content-Type-Options: nosniff from [server@google.gr:80].
+2014-13-21 21:13:38.943 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Date: Thu, 21 Aug 2014 18:13:38 GMT from [server@google.gr:80].
+2014-13-21 21:13:38.944 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Server: sffe from [server@google.gr:80].
+2014-13-21 21:13:38.944 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Content-Length: 219 from [server@google.gr:80].
+2014-13-21 21:13:38.944 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line X-XSS-Protection: 1; mode=block from [server@google.gr:80].
+2014-13-21 21:13:38.945 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - Got line Alternate-Protocol: 80:quic from [server@google.gr:80].
+2014-15-21 21:15:31.725 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-21 21:15:31.772 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-15-21 21:15:31.772 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-15-21 21:15:34.720 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-15-21 21:15:34.723 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Reading from client /127.0.0.1.
+2014-15-21 21:15:34.724 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line GET / HTTP/1.1 [/127.0.0.1].
+2014-15-21 21:15:34.724 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Host: test.p4u.gr:1027 [/127.0.0.1].
+2014-15-21 21:15:34.724 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 [/127.0.0.1].
+2014-15-21 21:15:34.724 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 [/127.0.0.1].
+2014-15-21 21:15:34.725 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Language: en-US,en;q=0.5 [/127.0.0.1].
+2014-15-21 21:15:34.725 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Accept-Encoding: gzip, deflate [/127.0.0.1].
+2014-15-21 21:15:34.725 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line DNT: 1 [/127.0.0.1].
+2014-15-21 21:15:34.725 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Connection: keep-alive [/127.0.0.1].
+2014-15-21 21:15:34.726 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Got line Cache-Control: max-age=0 [/127.0.0.1].
+2014-15-21 21:15:34.726 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - Proccessing client /127.0.0.1 request.
+2014-15-21 21:15:34.749 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-15-21 21:15:34.749 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-15-21 21:15:34.860 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : GET / HTTP/1.1
+2014-15-21 21:15:34.861 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Language: en-US,en;q=0.5
+2014-15-21 21:15:34.861 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Host: test.p4u.gr:1027
+2014-15-21 21:15:34.861 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Encoding: gzip, deflate
+2014-15-21 21:15:34.862 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : DNT: 1
+2014-15-21 21:15:34.862 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-15-21 21:15:34.862 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Connection: keep-alive
+2014-15-21 21:15:34.863 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-15-21 21:15:34.863 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Cache-Control: max-age=0
+2014-15-21 21:15:34.863 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Reading.
+2014-15-21 21:15:35.053 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line HTTP/1.1 302 Found.
+2014-15-21 21:15:35.053 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Location: http://www.google.com/.
+2014-15-21 21:15:35.053 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Cache-Control: private.
+2014-15-21 21:15:35.054 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Type: text/html; charset=UTF-8.
+2014-15-21 21:15:35.054 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-Content-Type-Options: nosniff.
+2014-15-21 21:15:35.054 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Date: Thu, 21 Aug 2014 18:15:35 GMT.
+2014-15-21 21:15:35.055 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Server: sffe.
+2014-15-21 21:15:35.055 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
+2014-15-21 21:15:35.055 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
+2014-15-21 21:15:35.056 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.
+2014-18-21 21:18:06.732 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-18-21 21:18:06.779 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-18-21 21:18:06.779 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-18-21 21:18:09.044 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-18-21 21:18:09.049 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-18-21 21:18:09.049 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-18-21 21:18:09.049 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-18-21 21:18:09.050 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-18-21 21:18:09.072 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-18-21 21:18:09.072 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-18-21 21:18:09.146 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : GET / HTTP/1.1
+2014-18-21 21:18:09.147 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Language: en-US,en;q=0.5
+2014-18-21 21:18:09.147 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Host: test.p4u.gr:1027
+2014-18-21 21:18:09.147 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Encoding: gzip, deflate
+2014-18-21 21:18:09.147 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : DNT: 1
+2014-18-21 21:18:09.148 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-18-21 21:18:09.148 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Connection: keep-alive
+2014-18-21 21:18:09.148 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-18-21 21:18:09.148 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Cache-Control: max-age=0
+2014-18-21 21:18:09.148 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Reading.
+2014-18-21 21:18:09.314 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line HTTP/1.1 302 Found.
+2014-18-21 21:18:09.314 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Location: http://www.google.com/.
+2014-18-21 21:18:09.315 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Cache-Control: private.
+2014-18-21 21:18:09.315 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Type: text/html; charset=UTF-8.
+2014-18-21 21:18:09.315 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-Content-Type-Options: nosniff.
+2014-18-21 21:18:09.315 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Date: Thu, 21 Aug 2014 18:18:09 GMT.
+2014-18-21 21:18:09.316 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Server: sffe.
+2014-18-21 21:18:09.316 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
+2014-18-21 21:18:09.316 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
+2014-18-21 21:18:09.317 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.
+2014-19-21 21:19:12.733 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-19-21 21:19:12.780 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-19-21 21:19:12.781 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-19-21 21:19:14.261 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-19-21 21:19:14.264 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-19-21 21:19:14.264 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-19-21 21:19:14.265 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-19-21 21:19:14.265 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-19-21 21:19:14.265 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-19-21 21:19:14.265 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-19-21 21:19:14.266 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-19-21 21:19:14.266 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-19-21 21:19:14.266 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-19-21 21:19:14.266 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-19-21 21:19:14.267 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-19-21 21:19:14.288 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-19-21 21:19:14.289 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-19-21 21:19:14.405 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-19-21 21:19:14.410 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-19-21 21:19:14.411 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-19-21 21:19:14.411 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-19-21 21:19:14.411 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-19-21 21:19:14.411 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-19-21 21:19:14.411 [Thread-2] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-19-21 21:19:14.457 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : GET / HTTP/1.1
+2014-19-21 21:19:14.458 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Language: en-US,en;q=0.5
+2014-19-21 21:19:14.458 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Host: test.p4u.gr:1027
+2014-19-21 21:19:14.459 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Encoding: gzip, deflate
+2014-19-21 21:19:14.459 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : DNT: 1
+2014-19-21 21:19:14.459 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-19-21 21:19:14.459 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Connection: keep-alive
+2014-19-21 21:19:14.460 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-19-21 21:19:14.460 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Cache-Control: max-age=0
+2014-19-21 21:19:14.460 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Reading.
+2014-19-21 21:19:14.491 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : GET / HTTP/1.1
+2014-19-21 21:19:14.492 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Language: en-US,en;q=0.5
+2014-19-21 21:19:14.492 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Host: test.p4u.gr:1027
+2014-19-21 21:19:14.492 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept-Encoding: gzip, deflate
+2014-19-21 21:19:14.492 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : DNT: 1
+2014-19-21 21:19:14.493 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0
+2014-19-21 21:19:14.493 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Connection: keep-alive
+2014-19-21 21:19:14.493 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+2014-19-21 21:19:14.493 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Printing : Cache-Control: max-age=0
+2014-19-21 21:19:14.494 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Reading.
+2014-19-21 21:19:14.634 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line HTTP/1.1 302 Found.
+2014-19-21 21:19:14.634 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Location: http://www.google.com/.
+2014-19-21 21:19:14.635 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Cache-Control: private.
+2014-19-21 21:19:14.635 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Type: text/html; charset=UTF-8.
+2014-19-21 21:19:14.636 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-Content-Type-Options: nosniff.
+2014-19-21 21:19:14.636 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Date: Thu, 21 Aug 2014 18:19:14 GMT.
+2014-19-21 21:19:14.636 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Server: sffe.
+2014-19-21 21:19:14.637 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
+2014-19-21 21:19:14.637 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
+2014-19-21 21:19:14.637 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.
+2014-19-21 21:19:14.677 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line HTTP/1.1 302 Found.
+2014-19-21 21:19:14.677 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Location: http://www.google.com/.
+2014-19-21 21:19:14.677 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Cache-Control: private.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Type: text/html; charset=UTF-8.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-Content-Type-Options: nosniff.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Date: Thu, 21 Aug 2014 18:19:14 GMT.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Server: sffe.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
+2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
+2014-19-21 21:19:14.679 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.

@@ -370,3 +370,24 @@
 2014-15-20 10:15:36.913 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
 2014-15-20 10:15:47.835 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
 2014-15-20 10:15:48.065 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Connection with server google.gr on port 80.
+2014-45-21 17:45:20.789 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-45-21 17:45:20.855 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-47-21 17:47:23.242 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-21 17:47:23.279 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:26.288 [Thread-1] ERROR gr.souperk.ion.server.ProxyRequestHandler - Unable to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:26.289 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /127.0.0.1 request
+2014-47-21 17:47:26.619 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-21 17:47:26.622 [Thread-2] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:29.294 [Thread-2] ERROR gr.souperk.ion.server.ProxyRequestHandler - Unable to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:29.295 [Thread-2] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /127.0.0.1 request
+2014-47-21 17:47:29.296 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-21 17:47:29.298 [Thread-3] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:29.374 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-21 17:47:32.300 [Thread-3] ERROR gr.souperk.ion.server.ProxyRequestHandler - Unable to connect on server 192.168.1.36 on port 80.
+2014-47-21 17:47:32.301 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /127.0.0.1 request
+2014-47-21 17:47:34.376 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - Got code 400 for client /127.0.0.1 request
+2014-48-21 17:48:17.798 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-48-21 17:48:17.844 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-48-21 17:48:21.882 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-48-21 17:48:21.908 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-48-21 17:48:22.277 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Connection with server google.gr on port 80.

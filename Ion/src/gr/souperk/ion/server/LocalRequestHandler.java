@@ -2,6 +2,7 @@ package gr.souperk.ion.server;
 
 import static gr.souperk.ion.conf.PropertiesTool.*;
 import gr.souperk.ion.conf.ServerProperties;
+import gr.souperk.ion.server.http.HttpRequest;
 
 import java.io.File;
 import java.io.IOException;

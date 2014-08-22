@@ -64,6 +64,13 @@ public class ProxyConfiguration
 				h.addRule(new Rule((String) url));
 			}
 			
+			List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
+			
+			for(HierarchicalConfiguration header : heads)
+			{
+				h.addHeader(header.getString("[@id]"), header.getString(""));
+			}
+			
 			this.hosts.add(h);
 		}
 	}
@@ -94,4 +101,5 @@ public class ProxyConfiguration
 		
 		return null;
 	}
+	
 }

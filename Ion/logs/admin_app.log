@@ -1,0 +1,35 @@
+2014-00-21 21:00:18.593 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-00-21 21:00:18.640 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-00-21 21:00:23.722 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-00-21 21:00:23.771 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-00-21 21:00:29.338 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-00-21 21:00:29.365 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-00-21 21:00:29.609 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Connection with server google.gr on port 80.
+2014-08-21 21:08:27.724 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-08-21 21:08:27.772 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-08-21 21:08:33.545 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:33.571 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-08-21 21:08:55.739 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-08-21 21:08:55.787 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-08-21 21:08:56.339 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:56.367 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-08-21 21:08:59.043 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-08-21 21:08:59.047 [Thread-2] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to connect on server google.gr on port 80.
+2014-13-21 21:13:35.726 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-13-21 21:13:35.773 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-13-21 21:13:38.646 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-21 21:13:38.675 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - Proxing to [server@google.gr:80].
+2014-15-21 21:15:31.725 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-15-21 21:15:31.772 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-15-21 21:15:34.720 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-15-21 21:15:34.749 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-18-21 21:18:06.732 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-18-21 21:18:06.779 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-18-21 21:18:09.044 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-18-21 21:18:09.072 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-19-21 21:19:12.733 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-19-21 21:19:12.781 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-19-21 21:19:14.261 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-19-21 21:19:14.289 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-19-21 21:19:14.405 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-19-21 21:19:14.411 [Thread-2] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.

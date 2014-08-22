@@ -1,5 +1,8 @@
 package gr.souperk.ion;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * 
  * @author Kostas "souperk" Alexopoulos 
@@ -8,6 +11,12 @@ package gr.souperk.ion;
 //TODO write javadoc
 public class SouperkUtils 
 {
+	
+	/** Logger SouperkUtils*/
+	private static Logger log = LogManager.getLogger(SouperkUtils.class);
+	
+	public static final String NEW_LINE = "\n";
+	
 	
 	/**
 	 * Matches a String with wildcards to another one.
@@ -36,5 +45,10 @@ public class SouperkUtils
         }
 		
 		return true;
+	}
+	
+	public static boolean startsWithIngoreCase(String base, String str)
+	{
+		return base.toLowerCase().startsWith(str.toLowerCase());
 	}
 }

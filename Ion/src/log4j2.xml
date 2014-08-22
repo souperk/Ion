@@ -7,7 +7,11 @@
       		<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
 	    </Console>
 
-   		<File name="MyFile" fileName="logs/app.log">
+   		<File name="Admin" fileName="logs/admin_app.log">
+			<PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    	</File>             
+
+   		<File name="Dev" fileName="logs/dev_app.log">
 			<PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     	</File>             
 
@@ -16,7 +20,8 @@
   	<loggers>     
 		<root level="debug">
 			<appender-ref ref="Console" level="DEBUG"/>
-			<appender-ref ref="MyFile" level="INFO"/>
+			<appender-ref ref="Admin" level="INFO"/>
+			<appender-ref ref="Dev" level="DEBUG"/>
 		</root>    
 	</loggers>
 

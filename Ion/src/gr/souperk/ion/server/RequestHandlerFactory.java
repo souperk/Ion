@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import gr.souperk.ion.conf.ProxyConfiguration;
+import gr.souperk.ion.server.http.HttpRequest;
 
 /**
  * 
