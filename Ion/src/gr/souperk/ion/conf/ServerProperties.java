@@ -1,7 +1,6 @@
 package gr.souperk.ion.conf;
 
 import java.io.File;
-import java.util.Iterator;
 
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.apache.commons.configuration.ConfigurationException;

@@ -1,7 +1,7 @@
 package gr.souperk.ion.conf;
 
+import gr.souperk.ion.server.http.HttpRequest;
 import gr.souperk.ion.server.proxy.Host;
-import gr.souperk.ion.server.proxy.Rule;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,43 +60,34 @@ public class ProxyConfiguration
 		{
 			Host h = new Host(host.getString("target"), host.getInt("target[@port]"));
 			
-			for(Object url : host.getList("urls.url"))
-			{
-				h.addRule(new Rule((String) url));
-			}
-			
 			List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
 			
 			for(HierarchicalConfiguration header : heads)
 			{
-				h.addHeader(header.getString("[@id]"), header.getString(""));
+				h.addRule(header.getString("[@name]"), header.getString(""));
 			}
 			
 			this.hosts.add(h);
 		}
 	}
 	
-	public boolean exists(String url)
+	public boolean exists(HttpRequest request)
 	{
-		if(url == null)
-			return false;
-		
-		url = url.trim();
-		
 		for(Host host : hosts)
 		{
-			if(host.isValid(url))
+			if(host.isValid(request))
 				return true;
+			log.info(host.toString() + " is invalid to " + request.get("Host"));
 		}
 		
 		return false;
 	}
 	
-	public Host getHost(String url)
+	public Host getHost(HttpRequest request)
 	{
 		for(Host host : hosts)
 		{
-			if(host.isValid(url))
+			if(host.isValid(request))
 				return host;
 		}
 		

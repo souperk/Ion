@@ -1,8 +1,5 @@
 package gr.souperk.ion;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 /**
  * 
  * @author Kostas "souperk" Alexopoulos 
@@ -11,9 +8,6 @@ import org.apache.logging.log4j.Logger;
 //TODO write javadoc
 public class SouperkUtils 
 {
-	
-	/** Logger SouperkUtils*/
-	private static Logger log = LogManager.getLogger(SouperkUtils.class);
 	
 	public static final String NEW_LINE = "\n";
 	

@@ -44,19 +44,8 @@ public class ServerThread
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 		
-			String line = in.readLine();
-			HttpRequest request = new HttpRequest();
-			
-			log.debug(address + "Reading.");
-			
-			while(line != null && !line.isEmpty())
-			{
-				log.debug(address + "Got line " + line + ".");
-				line = in.readLine();
-				
-				request.add(line);
-			}
-			
+			HttpRequest request = new HttpRequest(in);
+
 			try {
 				
 				log.debug(address + "Proccessing request.");
@@ -74,7 +63,7 @@ public class ServerThread
 			clientSocket.close();
 			
 		} catch (IOException e) {
-			e.printStackTrace();
+			//TODO catch exception
 		}
 	}
 }

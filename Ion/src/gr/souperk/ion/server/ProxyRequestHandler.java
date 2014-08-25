@@ -35,7 +35,7 @@ public class ProxyRequestHandler
 	public void handle(PrintWriter out)
 			throws RequestException 
 	{
-		Host h = ProxyConfiguration.getInstance().getHost(request.getHeader("Host").trim());
+		Host h = ProxyConfiguration.getInstance().getHost(request);
 		String serverID = "[server@" + h.getAddress() + ":" + h.getPort() + "]";
 		
 		log.info(serverID + "Proxing.");

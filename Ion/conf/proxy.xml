@@ -4,13 +4,9 @@
 	<host id="mygoogle.gr">
 		
 		<target port="80">google.gr</target>
-		
-		<urls>
-			<url>test.p4u.gr</url>
-		</urls>
 
 		<headers>
-			<header id="Host">google.gr</header>
+			<header name="Host">([!0-9A-Za-z]+\.)*test\.p4u\.gr(:[0-9]{1\,5})?</header>
 		</headers>
 		
 	</host>

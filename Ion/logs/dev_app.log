@@ -325,3 +325,353 @@
 2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
 2014-19-21 21:19:14.678 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
 2014-19-21 21:19:14.679 [Thread-2] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.
+2014-38-22 20:38:55.911 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-38-22 20:38:55.993 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-38-22 20:38:55.993 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-39-22 20:39:34.346 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-39-22 20:39:34.354 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-39-22 20:39:34.355 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-39-22 20:39:34.355 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-39-22 20:39:34.355 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-40-22 20:40:17.849 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-40-22 20:40:17.899 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-40-22 20:40:17.899 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-40-22 20:40:19.559 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-40-22 20:40:19.564 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-40-22 20:40:19.565 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-40-22 20:40:19.565 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-40-22 20:40:19.566 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-40-22 20:40:41.830 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-40-22 20:40:41.877 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-40-22 20:40:41.878 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-40-22 20:40:43.248 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-40-22 20:40:43.251 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-40-22 20:40:43.252 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-40-22 20:40:43.253 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-40-22 20:40:43.254 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-41-22 20:41:45.834 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-41-22 20:41:45.882 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-41-22 20:41:45.883 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-41-22 20:41:45.884 [main] ERROR gr.souperk.ion.server.WebServer - Port 1027 already occupied.
+2014-41-22 20:41:45.885 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-41-22 20:41:52.833 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-41-22 20:41:52.881 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-41-22 20:41:52.881 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-41-22 20:41:56.001 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-41-22 20:41:56.028 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-41-22 20:41:56.028 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-41-22 20:41:56.029 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-41-22 20:41:56.029 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-42-22 20:42:04.833 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-42-22 20:42:04.881 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-42-22 20:42:04.881 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-42-22 20:42:07.226 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-42-22 20:42:07.233 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-42-22 20:42:07.233 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-42-22 20:42:07.235 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-42-22 20:42:07.235 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-43-22 20:43:24.831 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-22 20:43:24.878 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-43-22 20:43:24.878 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-43-22 20:43:27.196 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-43-22 20:43:27.201 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-43-22 20:43:27.202 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-43-22 20:43:27.202 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-43-22 20:43:27.203 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-43-22 20:43:53.832 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-22 20:43:53.886 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-43-22 20:43:53.886 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-43-22 20:43:53.888 [main] ERROR gr.souperk.ion.server.WebServer - Port 1027 already occupied.
+2014-43-22 20:43:53.888 [main] INFO  gr.souperk.ion.Start - Server Stopping.
+2014-43-22 20:43:58.845 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-43-22 20:43:58.891 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-43-22 20:43:58.892 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-43-22 20:43:59.548 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-43-22 20:43:59.552 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-43-22 20:43:59.552 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-43-22 20:43:59.554 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-43-22 20:43:59.554 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-44-22 20:44:15.832 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-44-22 20:44:15.878 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-44-22 20:44:15.878 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-44-22 20:44:17.694 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-44-22 20:44:17.700 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-44-22 20:44:17.700 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-44-22 20:44:17.701 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-44-22 20:44:17.701 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-45-22 20:45:28.859 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-45-22 20:45:28.918 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-45-22 20:45:28.919 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-45-22 20:45:30.703 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-45-22 20:45:30.715 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-45-22 20:45:30.715 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-45-22 20:45:30.717 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-45-22 20:45:30.717 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-45-22 20:45:30.717 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-46-22 20:46:06.832 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-46-22 20:46:06.878 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-46-22 20:46:06.878 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-46-22 20:46:09.256 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-46-22 20:46:09.259 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-46-22 20:46:09.259 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-46-22 20:46:09.259 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-46-22 20:46:09.260 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-46-22 20:46:09.260 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-46-22 20:46:09.260 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-46-22 20:46:40.848 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-46-22 20:46:40.896 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-46-22 20:46:40.897 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-46-22 20:46:42.625 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-46-22 20:46:42.627 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-46-22 20:46:42.628 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-46-22 20:46:42.628 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-46-22 20:46:42.628 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-46-22 20:46:42.628 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-46-22 20:46:42.629 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-46-22 20:46:42.629 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-47-22 20:47:19.835 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-47-22 20:47:19.882 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-47-22 20:47:19.883 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-47-22 20:47:21.016 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-22 20:47:21.020 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-47-22 20:47:21.020 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-47-22 20:47:21.021 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-47-22 20:47:21.022 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-47-22 20:47:21.022 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-47-22 20:47:21.022 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-47-22 20:47:21.023 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-47-22 20:47:21.023 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-47-22 20:47:37.834 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-47-22 20:47:37.885 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-47-22 20:47:37.885 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-47-22 20:47:39.017 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-22 20:47:39.021 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-47-22 20:47:39.022 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-47-22 20:47:39.023 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-47-22 20:47:39.023 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-47-22 20:47:39.024 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-47-22 20:47:39.024 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-47-22 20:47:39.024 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-47-22 20:47:39.024 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-47-22 20:47:39.025 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-47-22 20:47:39.025 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-47-22 20:47:39.067 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-47-22 20:47:39.068 [Thread-1] DEBUG gr.souperk.ion.server.LocalRequestHandler - Invalid request returning code 400.
+2014-47-22 20:47:39.068 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 400.
+2014-47-22 20:47:39.185 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-22 20:47:39.186 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-47-22 20:47:39.186 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET /favicon.ico HTTP/1.1.
+2014-47-22 20:47:39.186 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-47-22 20:47:39.186 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: image/png,image/*;q=0.8,*/*;q=0.5.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-47-22 20:47:39.187 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-47-22 20:47:39.188 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-47-22 20:47:39.188 [Thread-2] DEBUG gr.souperk.ion.server.LocalRequestHandler - Invalid request returning code 400.
+2014-47-22 20:47:39.188 [Thread-2] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 400.
+2014-47-22 20:47:39.189 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-47-22 20:47:39.190 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-47-22 20:47:39.190 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET /favicon.ico HTTP/1.1.
+2014-47-22 20:47:39.190 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-47-22 20:47:39.191 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-47-22 20:47:39.191 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-47-22 20:47:39.191 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-47-22 20:47:39.191 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-47-22 20:47:39.192 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-47-22 20:47:39.192 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-47-22 20:47:39.192 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-47-22 20:47:39.192 [Thread-3] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-47-22 20:47:39.193 [Thread-3] DEBUG gr.souperk.ion.server.LocalRequestHandler - Invalid request returning code 400.
+2014-47-22 20:47:39.193 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 400.
+2014-48-22 20:48:58.837 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-48-22 20:48:58.884 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-48-22 20:48:58.884 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-49-22 20:49:00.938 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-49-22 20:49:00.942 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-49-22 20:49:00.942 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-49-22 20:49:00.943 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-49-22 20:49:00.944 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-49-22 20:49:51.856 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-49-22 20:49:51.904 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-49-22 20:49:51.904 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-49-22 20:49:53.493 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-49-22 20:49:53.501 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-49-22 20:49:53.502 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-49-22 20:49:53.503 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-49-22 20:49:53.504 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-49-22 20:49:53.504 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-49-22 20:49:53.505 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-49-22 20:49:53.505 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-49-22 20:49:53.505 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-49-22 20:49:53.505 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-49-22 20:49:53.505 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-49-22 20:49:53.506 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-51-22 20:51:19.843 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-51-22 20:51:19.890 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-51-22 20:51:19.890 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-51-22 20:51:21.375 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-51-22 20:51:21.380 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-51-22 20:51:21.381 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-51-22 20:51:21.381 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-51-22 20:51:21.382 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-02-22 21:02:44.855 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-02-22 21:02:44.907 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-02-22 21:02:44.907 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-02-22 21:02:45.228 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-02-22 21:02:45.235 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-02-22 21:02:45.235 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-02-22 21:02:45.236 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-02-22 21:02:45.237 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-02-22 21:02:45.237 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-02-22 21:02:45.237 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-02-22 21:02:45.260 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-02-22 21:02:45.260 [Thread-1] DEBUG gr.souperk.ion.server.LocalRequestHandler - Invalid request returning code 400.
+2014-02-22 21:02:45.260 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 400.
+2014-04-22 21:04:27.867 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-04-22 21:04:27.914 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-04-22 21:04:27.915 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-04-22 21:04:28.864 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-04-22 21:04:28.872 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Reading.
+2014-04-22 21:04:28.872 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line GET / HTTP/1.1.
+2014-04-22 21:04:28.874 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Host: test.p4u.gr:1027.
+2014-04-22 21:04:28.874 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0.
+2014-04-22 21:04:28.874 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8.
+2014-04-22 21:04:28.874 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Language: en-US,en;q=0.5.
+2014-04-22 21:04:28.874 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Accept-Encoding: gzip, deflate.
+2014-04-22 21:04:28.875 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line DNT: 1.
+2014-04-22 21:04:28.875 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Connection: keep-alive.
+2014-04-22 21:04:28.875 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got line Cache-Control: max-age=0.
+2014-04-22 21:04:28.875 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-04-22 21:04:28.898 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-04-22 21:04:28.898 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-04-22 21:04:28.899 [Thread-1] DEBUG gr.souperk.ion.server.LocalRequestHandler - Invalid request returning code 400.
+2014-04-22 21:04:28.899 [Thread-1] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 400.
+2014-12-25 08:12:49.795 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-12-25 08:12:49.910 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-12-25 08:12:49.910 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-12-25 08:12:59.888 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-12-25 08:12:59.893 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-12-25 08:12:59.922 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  localhost:1027
+2014-12-25 08:12:59.922 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:00.010 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-13-25 08:13:00.012 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-13-25 08:13:00.013 [Thread-2] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  localhost:1027
+2014-13-25 08:13:00.013 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:00.097 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-13-25 08:13:00.098 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-13-25 08:13:00.099 [Thread-3] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  localhost:1027
+2014-13-25 08:13:00.099 [Thread-3] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:00.100 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.
+2014-13-25 08:13:00.101 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-13-25 08:13:00.102 [Thread-4] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-13-25 08:13:00.102 [Thread-4] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  localhost:1027
+2014-13-25 08:13:00.103 [Thread-4] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:00.103 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.
+2014-13-25 08:13:08.488 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:08.497 [Thread-5] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:08.498 [Thread-5] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:08.498 [Thread-5] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:08.516 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:08.554 [Thread-6] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:08.555 [Thread-6] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:08.555 [Thread-6] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:08.622 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:08.623 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:08.624 [Thread-7] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:08.624 [Thread-7] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:08.624 [Thread-8] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:08.625 [Thread-7] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:08.625 [Thread-8] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:08.625 [Thread-7] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 404.
+2014-13-25 08:13:08.625 [Thread-8] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:08.626 [Thread-8] INFO  gr.souperk.ion.server.ServerThread - [/127.0.0.1]Got code 404.
+2014-13-25 08:13:12.174 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:12.175 [Thread-9] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:12.175 [Thread-9] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:12.176 [Thread-9] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-13-25 08:13:12.190 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-13-25 08:13:12.205 [Thread-10] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-13-25 08:13:12.206 [Thread-10] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-13-25 08:13:12.206 [Thread-10] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-25 08:22:15.700 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-22-25 08:22:15.747 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-22-25 08:22:15.747 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-22-25 08:22:19.225 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-22-25 08:22:19.229 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-22-25 08:22:19.250 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-22-25 08:22:19.251 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-22-25 08:22:19.271 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-22-25 08:22:19.274 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-22-25 08:22:19.275 [Thread-2] INFO  gr.souperk.ion.conf.ProxyConfiguration - google.gr is invalid to  test.p4u.gr:1027
+2014-22-25 08:22:19.275 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-29-25 08:29:10.710 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-29-25 08:29:10.757 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-29-25 08:29:10.758 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-29-25 08:29:12.388 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-29-25 08:29:12.391 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-29-25 08:29:12.416 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-29-25 08:29:12.416 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-29-25 08:29:12.437 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-29-25 08:29:12.438 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-29-25 08:29:12.439 [Thread-2] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-29-25 08:29:12.439 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-30-25 08:30:03.706 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-30-25 08:30:03.752 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-30-25 08:30:03.753 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-30-25 08:30:05.140 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-30-25 08:30:05.142 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-30-25 08:30:05.165 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-30-25 08:30:05.165 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-30-25 08:30:05.183 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-30-25 08:30:05.185 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-30-25 08:30:05.185 [Thread-2] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-30-25 08:30:05.186 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-30-25 08:30:56.706 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-30-25 08:30:56.753 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-30-25 08:30:56.754 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-30-25 08:30:57.694 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-30-25 08:30:57.699 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-30-25 08:30:57.722 [Thread-1] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-30-25 08:30:57.723 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-30-25 08:30:57.744 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-30-25 08:30:57.745 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-30-25 08:30:57.746 [Thread-2] INFO  gr.souperk.ion.conf.ProxyConfiguration - [google.gr:80] is invalid to  test.p4u.gr:1027
+2014-30-25 08:30:57.746 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-32-25 08:32:57.723 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-32-25 08:32:57.772 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-32-25 08:32:57.772 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-32-25 08:32:58.969 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /127.0.0.1.
+2014-32-25 08:32:58.972 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/127.0.0.1]Proccessing request.
+2014-32-25 08:32:58.996 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to ProxyRequestHandler
+2014-32-25 08:32:58.996 [Thread-1] INFO  gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Proxing.
+2014-32-25 08:32:59.167 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Reading.
+2014-32-25 08:32:59.272 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line HTTP/1.1 302 Found.
+2014-32-25 08:32:59.273 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Location: http://www.google.com/.
+2014-32-25 08:32:59.273 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Cache-Control: private.
+2014-32-25 08:32:59.273 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Type: text/html; charset=UTF-8.
+2014-32-25 08:32:59.274 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-Content-Type-Options: nosniff.
+2014-32-25 08:32:59.274 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Date: Mon, 25 Aug 2014 05:32:59 GMT.
+2014-32-25 08:32:59.274 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Server: sffe.
+2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
+2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
+2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.

@@ -1,7 +1,5 @@
 package gr.souperk.ion.server.proxy;
 
-import gr.souperk.ion.server.http.HttpHeaderBean;
-import gr.souperk.ion.server.http.HttpHeaderBeanList;
 import gr.souperk.ion.server.http.HttpRequest;
 
 import java.util.ArrayList;
@@ -18,11 +16,20 @@ import java.util.List;
  */
 public class Host 
 {
+	/** The addres of the host.*/
 	private String address;
+	
+	/** The port of the host.*/
 	private int port;
 	
+	/** Rules for the server to respond to a HttpRequest.*/
 	private List<Rule> rules;
-	                                
+	              
+	/**
+	 * 
+	 * @param address address of the host.
+	 * @param port port of the host.
+	 */
 	public Host(String address, int port) 
 	{
 		this.address = address;
@@ -31,31 +38,60 @@ public class Host
 		this.rules = new ArrayList<Rule>();
 	}
 
-	public void addRule(Rule r)
+	/**
+	 * Creates a rule and adds it to the rule list.
+	 * 
+	 * @param header the name of the header.
+	 * @param expectedValue the expected value of the rule.
+	 */
+	public void addRule(String header, String expectedValue)
 	{
-		rules.add(r);
+		Rule r = new Rule(header, expectedValue);
+		
+		addRule(r);
 	}
 	
-	//TODO write the code and javadoc.
-	public boolean isValid(HttpRequest request)
+	/**
+	 * Stores the rule to the rule list. If a rule for the same HttpHeader it exists without doing anything.
+	 * 
+	 * @param r rule to be stored.
+	 */
+	public void addRule(Rule rule)
 	{
-		url = url.trim();
-		
-		if(url.contains(":"))
-			url = url.substring(0, url.indexOf(":"));
-		
 		for(Rule r : rules)
 		{
-			if(r.meetsRule(url))
-				return true;
+			if(r.getHeader().equals(rule.getHeader()))
+			{
+				return;
+				//TODO decide whether to throw exception or not.
+			}
 		}
 		
-		return false;
+		rules.add(rule);
+	}
+
+	/**
+	 * In current approach the Host will held only one rule per HttpHeader.
+	 * 
+	 * @param request
+	 * @return whether the Host will respond to HttpRequest.
+	 */
+	public boolean isValid(HttpRequest request)
+	{
+		for(Rule r : rules)
+		{
+			if(!r.isValid(request))
+			{
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	/**
 	 * 
-	 * @return the addres to connect to Host.
+	 * @return the address to connect to Host.
 	 */
 	public String getAddress()
 	{
@@ -69,6 +105,11 @@ public class Host
 	public int getPort()
 	{
 		return port;
+	}
+	
+	@Override
+	public String toString() {
+		return "[" + address + ":" + port + "]";
 	}
 	
 	

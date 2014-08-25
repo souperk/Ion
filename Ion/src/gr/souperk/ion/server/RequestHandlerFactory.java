@@ -28,7 +28,7 @@ public class RequestHandlerFactory
 	{
 		RequestHandler handler = null;
 			
-		if(ProxyConfiguration.getInstance().exists(request.getHeader("Host")))
+		if(ProxyConfiguration.getInstance().exists(request))
 		{
 			handler = new ProxyRequestHandler(request);
 			log.debug("handler set to ProxyRequestHandler");
