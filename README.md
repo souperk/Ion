@@ -22,3 +22,5 @@ Ionians were one of the 3 major greek tribes of ancient period. While the name i
 Getting Started
 ===
 There aren't any documentation or tutorials so for now you can use only the javadoc to get an idea what is going on.
+
+You need a folder resources in the some folder with the jar which will contain your site.
