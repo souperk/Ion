@@ -4,6 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<bean id="serverThread" 
+		class="gr.souperk.ion.server.ServerThread">
+		<constructor-arg ref="serverConfiguration"/>
+	</bean>
+
 	<bean id="webServer" 
 		class="gr.souperk.ion.server.WebServer">
 		<constructor-arg ref="serverConfiguration"/>

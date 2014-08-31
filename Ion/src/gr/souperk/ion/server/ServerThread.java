@@ -1,5 +1,6 @@
 package gr.souperk.ion.server;
 
+import gr.souperk.ion.conf.ServerConfiguration;
 import gr.souperk.ion.server.http.HttpRequest;
 
 import java.io.BufferedReader;
@@ -17,6 +18,8 @@ import org.apache.logging.log4j.Logger;
  * @author Kostas "souperk" Alexopoulos
  *
  */
+//TODO Write javadoc.
+//TODO Decide to make s Thread specified configuration.
 public class ServerThread 
 	extends Thread
 {
@@ -24,11 +27,19 @@ public class ServerThread
 	/** Logger ServerThread*/
 	private static Logger log = LogManager.getLogger(ServerThread.class);
 	
-	private Socket clientSocket ;
+	private Socket socket ;
 	
-	public ServerThread(Socket clientSocket) 
+	@SuppressWarnings("unused")
+	private ServerConfiguration conf;
+	
+	public ServerThread(ServerConfiguration conf) 
 	{
-		this.clientSocket = clientSocket ;
+		this.conf = conf;
+	}
+	
+	public void setClientSocket(Socket socket)
+	{
+		this.socket = socket;
 	}
 	
 	/**
@@ -39,10 +50,10 @@ public class ServerThread
 	{
 		try {
 
-			String address = "[" + clientSocket.getLocalAddress().toString() + "]"; 
+			String address = "[" + socket.getLocalAddress().toString() + "]"; 
 			
-			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 		
 			HttpRequest request = new HttpRequest(in);
 
@@ -60,7 +71,7 @@ public class ServerThread
 			
 			in.close();
 			out.close();
-			clientSocket.close();
+			socket.close();
 			
 		} catch (IOException e) {
 			//TODO catch exception

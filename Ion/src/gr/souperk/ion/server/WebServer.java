@@ -84,7 +84,10 @@ public class WebServer
 					
 					log.info("Connection established with " + clientSocket.getLocalAddress().toString() + ".");
 					
-					new ServerThread(clientSocket).start();
+					ServerThread thread = new ServerThread(conf);
+					thread.setClientSocket(clientSocket);
+					thread.start();
+					
 					break;
 				}
 			}

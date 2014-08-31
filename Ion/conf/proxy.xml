@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <proxy>
 	
+	#sample proxy configuration
 	<host id="mygoogle.gr">
 		
 		<target port="80">google.gr</target>
 
 		<headers>
-			<header name="Host">^([!0-9A-Za-z]+\.)*test\.p4u\.gr(:[0-9]{1\,5})?&</header>
+			<header name="Host">^([!0-9A-Za-z]+\.)*test\.p4u\.gr(:[0-9]{1\,5})?$</header>
 		</headers>
 		
 	</host>

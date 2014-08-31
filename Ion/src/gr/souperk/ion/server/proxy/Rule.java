@@ -40,8 +40,6 @@ public class Rule
 	//TODO write code and javadoc.
 	public boolean isValid(HttpRequest request)
 	{
-		System.err.println(pattern + "," + request.get(header));
-		System.err.println(Pattern.matches(pattern, request.get(header)));
 		return Pattern.matches(pattern, request.get(header).trim());
 	}
 	
