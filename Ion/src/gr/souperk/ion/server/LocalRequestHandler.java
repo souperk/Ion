@@ -1,7 +1,7 @@
 package gr.souperk.ion.server;
 
 import static gr.souperk.ion.conf.PropertiesTool.*;
-import gr.souperk.ion.conf.ServerProperties;
+import gr.souperk.ion.conf.ServerConfiguration;
 import gr.souperk.ion.server.http.HttpRequest;
 
 import java.io.File;
@@ -52,14 +52,14 @@ public class LocalRequestHandler
 		String args[] = request.getCommand().split(" ");
 		
 		if(args.length != 3 || 
-				!args[0].equals(ServerProperties.getInstance().getProperty(COMMAND_GET)) ||
-				!args[2].equals(ServerProperties.getInstance().getProperty(HTTP_VERSION)))
+				!args[0].equals(ServerConfiguration.getInstance().getProperty(COMMAND_GET)) ||
+				!args[2].equals(ServerConfiguration.getInstance().getProperty(HTTP_VERSION)))
 		{
 			throw new RequestException(400);
 		}
 		
 		if(args[1].endsWith("/"))
-			args[1] = args[1] + ServerProperties.getInstance().getProperty(DEFAULT_RETURN);	
+			args[1] = args[1] + ServerConfiguration.getInstance().getProperty(DEFAULT_RETURN);	
 		
 		if(args[1].startsWith("/"))
 				args[1] = "resources" + args[1];
@@ -92,7 +92,7 @@ public class LocalRequestHandler
 			
 			if(f.exists())
 			{
-				File success = new File(ServerProperties.getInstance().getProperty(CODE_200));
+				File success = new File(ServerConfiguration.getInstance().getString(CODE_200));
 				
 				out.println(FileUtils.readFileToString(success));
 				out.println();

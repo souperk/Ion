@@ -1,5 +1,8 @@
 package gr.souperk.ion.server;
 
+import gr.souperk.ion.conf.PropertiesTool;
+import gr.souperk.ion.conf.ServerConfiguration;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -35,13 +38,14 @@ public class WebServer
 	private int port;
 	private int status;
 	
+	private ServerConfiguration conf;
 	/**
 	 * 
 	 * @param port The port the server will listen on.
 	 */
-	public WebServer(int port) 
+	public WebServer(ServerConfiguration conf) 
 	{
-		this.port = port;
+		this.conf = conf;
 	}
 	
 	/**
@@ -52,8 +56,9 @@ public class WebServer
 	{
 		ServerSocket srv;
 		boolean flag = true;
-		
-		setStatus(SERVER_RUNNING);;
+
+		port = conf.getInt(PropertiesTool.PORT);
+		setStatus(SERVER_RUNNING);
 		
 		try {
 			log.info("Opening server on port " + port + ".");
@@ -62,6 +67,7 @@ public class WebServer
 			while(flag)
 			{
 				switch (status) {
+				
 				case SERVER_STOP:
 					flag = false;
 					break;

@@ -23,17 +23,18 @@ import org.apache.logging.log4j.Logger;
  * @author Kostas "souperk" Alexopoulos
  *
  */
-public class ServerProperties 
+public class ServerConfiguration 
+	extends CompositeConfiguration
 {	
 	
 	/** Logger ServerProperties*/
-	private static Logger log = LogManager.getLogger(ServerProperties.class);
+	private static Logger log = LogManager.getLogger(ServerConfiguration.class);
 	
 	/** The active instance of {@code ServerProperties}*/
-	private static ServerProperties instace;
+	private static ServerConfiguration instace;
 	
-	/** Holds all loaded configuration.*/
-	private CompositeConfiguration conf;
+//	/** Holds all loaded configuration.*/
+//	private CompositeConfiguration conf;
 	
 	/**
 	 * Constructor of {@code ServerProperties}. Creates a {@code CompositeConfiguration} 
@@ -44,20 +45,18 @@ public class ServerProperties
 	 * is the same of addition order. So add Configurations with priority order.
 	 * 
 	 */
-	private ServerProperties()
+	private ServerConfiguration()
 	{
-		conf = new CompositeConfiguration();
-		
+		super(PropertiesTool.defaults());
+
 		try 
 		{
-			conf.addConfiguration(loadProperties());
+			addConfiguration(loadProperties());
 		} catch (ConfigurationException e) 
 		{
+			//TODO Fix this.
 			log.warn("Unable to open configuration file (resources/ion.conf)");
 		}
-		
-		conf.addConfiguration(PropertiesTool.defaults());
-		
 	}	
 	
 	/**
@@ -73,20 +72,12 @@ public class ServerProperties
 	/**
 	 * @return An active instance of {@code ServerProperties}. If one does not exist it creates an new one first.
 	 */
-	public static ServerProperties getInstance()
+	public static ServerConfiguration getInstance()
 	{
 		if(instace == null)
-			instace = new ServerProperties();
+			instace = new ServerConfiguration();
 		return instace;
 	}
 	
-	/**
-	 * @param key The key for the property.
-	 * @return Gives the property for the wanted key.
-	 */
-	public String getProperty(String key)
-	{
-		return conf.getString(key);
-	}
 
 }

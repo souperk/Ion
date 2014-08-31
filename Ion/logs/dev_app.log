@@ -675,3 +675,39 @@
 2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Content-Length: 219.
 2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line X-XSS-Protection: 1; mode=block.
 2014-32-25 08:32:59.275 [Thread-1] DEBUG gr.souperk.ion.server.ProxyRequestHandler - [server@google.gr:80]Got line Alternate-Protocol: 80:quic.
+2014-25-28 21:25:19.167 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-25-28 21:25:19.292 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-25-28 21:25:19.292 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-25-28 21:25:51.045 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-25-28 21:25:51.056 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-25-28 21:25:51.087 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-25-28 21:25:51.088 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-25-28 21:25:51.154 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-25-28 21:25:51.155 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-25-28 21:25:51.155 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-25-28 21:25:51.202 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-25-28 21:25:51.203 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-25-28 21:25:51.203 [Thread-3] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-25-28 21:25:51.203 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.
+2014-25-28 21:25:51.211 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-25-28 21:25:51.213 [Thread-4] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-25-28 21:25:51.213 [Thread-4] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-25-28 21:25:51.214 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.
+2014-58-31 10:58:21.104 [main] INFO  gr.souperk.ion.Start - Server Starting.
+2014-58-31 10:58:21.475 [main] DEBUG gr.souperk.ion.server.WebServer - Server Status changed to SERVER_RUNNING.
+2014-58-31 10:58:21.476 [main] INFO  gr.souperk.ion.server.WebServer - Opening server on port 1027.
+2014-58-31 10:58:47.690 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-58-31 10:58:47.693 [Thread-1] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-58-31 10:58:47.715 [Thread-1] ERROR gr.souperk.ion.conf.ProxyConfiguration - Unable to open proxy configuration file (conf/proxy.xml).
+2014-58-31 10:58:47.716 [Thread-1] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-58-31 10:58:47.779 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-58-31 10:58:47.780 [Thread-2] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-58-31 10:58:47.780 [Thread-2] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-58-31 10:58:47.842 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-58-31 10:58:47.843 [Thread-3] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-58-31 10:58:47.843 [Thread-3] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-58-31 10:58:47.844 [Thread-3] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.
+2014-58-31 10:58:47.857 [main] INFO  gr.souperk.ion.server.WebServer - Connection established with /0:0:0:0:0:0:0:1.
+2014-58-31 10:58:47.858 [Thread-4] DEBUG gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Proccessing request.
+2014-58-31 10:58:47.859 [Thread-4] DEBUG gr.souperk.ion.server.RequestHandlerFactory - handler set to LocalRequestHandler
+2014-58-31 10:58:47.859 [Thread-4] INFO  gr.souperk.ion.server.ServerThread - [/0:0:0:0:0:0:0:1]Got code 404.

@@ -1,5 +1,8 @@
 package gr.souperk.ion;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * 
  * @author Kostas "souperk" Alexopoulos 
@@ -11,34 +14,14 @@ public class SouperkUtils
 	
 	public static final String NEW_LINE = "\n";
 	
+	private static ApplicationContext context;
 	
-	/**
-	 * Matches a String with wildcards to another one.
-	 * 
-	 * @param pattern the pattern to compare the text.
-	 * @param text the text to compare with the pattern.
-	 * @return true if text matches to the pattern else false.
-	 */
-	public static boolean isWildcardMatch(String pattern, String text)
+	public static <T> T getBean(Class<T> bean)
 	{
-        String parts[] = pattern.split("\\*");
-
-        if(parts.length == 1)
-        	return pattern.equals(text);
-        
-        for (String card : parts)
-        {
-            int idx = text.indexOf(card);
-            
-            if(idx == -1)
-            {
-                return false;
-            }
-
-            text = text.substring(idx + card.length());
-        }
+		if(context == null)
+			context = new ClassPathXmlApplicationContext("spring.xml");
 		
-		return true;
+		return context.getBean(bean);
 	}
 	
 	public static boolean startsWithIngoreCase(String base, String str)
