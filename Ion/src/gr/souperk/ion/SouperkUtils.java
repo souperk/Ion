@@ -24,6 +24,11 @@ public class SouperkUtils
 		return context.getBean(bean);
 	}
 	
+	public static void close()
+	{
+		((ClassPathXmlApplicationContext)context ).close();
+	}
+	
 	public static boolean startsWithIngoreCase(String base, String str)
 	{
 		return base.toLowerCase().startsWith(str.toLowerCase());
