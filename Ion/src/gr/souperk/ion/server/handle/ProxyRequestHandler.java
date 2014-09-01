@@ -1,7 +1,7 @@
-package gr.souperk.ion.server;
+package gr.souperk.ion.server.handle;
 
-import gr.souperk.ion.conf.ProxyConfiguration;
-import gr.souperk.ion.server.http.HttpRequest;
+import gr.souperk.ion.server.RequestException;
+import gr.souperk.ion.server.http.HttpConnection;
 import gr.souperk.ion.server.proxy.Host;
 
 import java.io.BufferedReader;
@@ -20,35 +20,31 @@ import org.apache.logging.log4j.Logger;
  */
 //TODO write javadoc
 public class ProxyRequestHandler 
-	extends RequestHandler
+	implements RequestHandler
 {
 	
 	/** Logger ProxyRequestHandler*/
 	private static Logger log = LogManager.getLogger(ProxyRequestHandler.class);
 
-	public ProxyRequestHandler(HttpRequest request) 
-	{
-		super(request);
-	}
 	
 	@Override
-	public void handle(PrintWriter out)
+	public void handle(HttpConnection connection)
 			throws RequestException 
 	{
-		Host h = ProxyConfiguration.getInstance().getHost(request);
-		String serverID = "[server@" + h.getAddress() + ":" + h.getPort() + "]";
+		Host host = connection.getHost();
+		String serverID = "[server@" + host.getAddress() + ":" + host.getPort() + "]";
 		
 		log.info(serverID + "Proxing.");
 
 		try 
 		{
 			
-			Socket socket = new Socket(h.getAddress(), h.getPort());
+			Socket socket = new Socket(host.getAddress(), host.getPort());
 
 			PrintWriter sOut = new PrintWriter(socket.getOutputStream(), true);
 			BufferedReader sIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-			sOut.println(request.toString());
+			sOut.println(connection.getRequest().toString());
 			sOut.println();
 			
 			log.debug(serverID + "Reading.");
@@ -59,7 +55,7 @@ public class ProxyRequestHandler
 			{
 				log.debug(serverID + "Got line " + line + ".");
 
-				out.println(line);
+				connection.getOut().println(line);
 			}
 			
 			sOut.close();

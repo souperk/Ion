@@ -9,17 +9,23 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * {@code ServerProperties} holds the main properties of the server
- * like the port it runs on. 
+ * {@code ServerConfiguration} is the container of the general server configurations
+ * like in which port it should run.
  *
  * <br></br>
- * It is designed with the singleton pattern enabling to load the properties
- * only once in a runtime. With the first call of {@code ServerProperties.getInstance()} 
- * it creates a static instance of class that is never closed till System exit.
+ * {@code ServerConfiguration} is designed with the singleton pattern enabling the server to open the configuration 
+ * only once in a runtime saving a lot of time. With the first call of {@code ServerConfiguration.getInstance()} 
+ * it creates a static instance of the class that isn't destroyed until System exit.
  * 
  * <br></br>
- * Use {@code ServerProperties.getInstance().getProperty(String)} to get the property for the key.
+ * {@code ServerConfiguration} inherits the {@code CompositeConfiguration} of apache commons 
+ * configuration enabling it to use all of its cool methods.
  * 
+ * <br></br>
+ * Since 1.4 {@code ServerConfiguration} can be loaded from SouperkUtils.getBean(Class<T> bean) more resistant to 
+ * future changes in turns of backwards compatibility.
+ * 
+ * @since 1.0 as {@code ServerProperties} in 1.4 renamed to {@code ServerConfiguration}
  * @author Kostas "souperk" Alexopoulos
  *
  */
@@ -32,12 +38,9 @@ public class ServerConfiguration
 	
 	/** The active instance of {@code ServerProperties}*/
 	private static ServerConfiguration instace;
-	
-//	/** Holds all loaded configuration.*/
-//	private CompositeConfiguration conf;
-	
+		
 	/**
-	 * Constructor of {@code ServerProperties}. Creates a {@code CompositeConfiguration} 
+	 * Constructor of {@code ServerConfiguration}. Creates a {@code CompositeConfiguration} 
 	 * and then adds default and file properties
 	 * <br></br>
 	 * Note : {@code CompositeConfiguration.getProperty(String ,boolean)} returns
@@ -58,17 +61,7 @@ public class ServerConfiguration
 			log.warn("Unable to open configuration file (resources/ion.conf)");
 		}
 	}	
-	
-	/**
-	 * @return A {@code PropertiesConfiguration} loaded from {@code PropertiesTool.DEFAULT_CONF_FILE}.
-	 * @throws ConfigurationException If error while loading properties file.
-	 */
-	private PropertiesConfiguration loadProperties() 
-			throws ConfigurationException
-	{
-		return new PropertiesConfiguration(new File(PropertiesTool.DEFAUL_CONF_FILE));
-	}
-	
+
 	/**
 	 * @return An active instance of {@code ServerProperties}. If one does not exist it creates an new one first.
 	 */
@@ -79,5 +72,14 @@ public class ServerConfiguration
 		return instace;
 	}
 	
+	/**
+	 * @return A {@code PropertiesConfiguration} loaded from {@code PropertiesTool.DEFAULT_CONF_FILE}.
+	 * @throws ConfigurationException If error while loading properties file.
+	 */
+	private PropertiesConfiguration loadProperties() 
+			throws ConfigurationException
+	{
+		return new PropertiesConfiguration(new File(PropertiesTool.DEFAUL_CONF_FILE));
+	}
 
 }

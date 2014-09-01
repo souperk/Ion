@@ -1,8 +1,12 @@
-package gr.souperk.ion.server;
+package gr.souperk.ion.server.handle;
 
-import static gr.souperk.ion.conf.PropertiesTool.*;
+import static gr.souperk.ion.conf.PropertiesTool.CODE_200;
+import static gr.souperk.ion.conf.PropertiesTool.COMMAND_GET;
+import static gr.souperk.ion.conf.PropertiesTool.DEFAULT_RETURN;
+import static gr.souperk.ion.conf.PropertiesTool.HTTP_VERSION;
 import gr.souperk.ion.conf.ServerConfiguration;
-import gr.souperk.ion.server.http.HttpRequest;
+import gr.souperk.ion.server.RequestException;
+import gr.souperk.ion.server.http.HttpConnection;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,16 +24,17 @@ import org.apache.logging.log4j.Logger;
 //TODO write javadoc
 //TODO add more compatibility with http headers.
 public class LocalRequestHandler
-	extends RequestHandler
+	implements RequestHandler
 {
-	
-	
+
 	/** Logger RequestHandler*/
 	private static Logger log = LogManager.getLogger(LocalRequestHandler.class);
 	
-	public LocalRequestHandler(HttpRequest request) 
+	private ServerConfiguration conf;
+	
+	public LocalRequestHandler(ServerConfiguration conf) 
 	{
-		super(request);
+		this.conf = conf;
 	}
 	
 	/**
@@ -40,26 +45,26 @@ public class LocalRequestHandler
 	 * @throws IOException on problems while communicating with client.
 	 */
 	//TODO Write javadoc
-	public void handle(PrintWriter out) 
+	public void handle(HttpConnection connection) 
 			throws RequestException
 	{
-		if(request.isEmpty())
+		if(connection.getRequest().isEmpty())
 		{
 			log.debug("Invalid request returning code 400.");
 			throw new RequestException(400);
 		}
 		
-		String args[] = request.getCommand().split(" ");
+		String args[] = connection.getRequest().getCommand().split(" ");
 		
 		if(args.length != 3 || 
-				!args[0].equals(ServerConfiguration.getInstance().getProperty(COMMAND_GET)) ||
-				!args[2].equals(ServerConfiguration.getInstance().getProperty(HTTP_VERSION)))
+				!args[0].equals(conf.getProperty(COMMAND_GET)) ||
+				!args[2].equals(conf.getProperty(HTTP_VERSION)))
 		{
 			throw new RequestException(400);
 		}
 		
 		if(args[1].endsWith("/"))
-			args[1] = args[1] + ServerConfiguration.getInstance().getProperty(DEFAULT_RETURN);	
+			args[1] = args[1] + conf.getProperty(DEFAULT_RETURN);	
 		
 		if(args[1].startsWith("/"))
 				args[1] = "resources" + args[1];
@@ -68,7 +73,7 @@ public class LocalRequestHandler
 		
 		File f = new File(args[1]);
 		
-		if(LocalRequestHandler.printFile(out, f))
+		if(printFile(connection.getOut(), f))
 		{
 			return ;
 		}else
@@ -77,6 +82,7 @@ public class LocalRequestHandler
 		}
 			
 	}
+	
 	/**
 	 * Convenience method for printing files.
 	 * <br></br>
@@ -86,13 +92,15 @@ public class LocalRequestHandler
 	 * @param f file to print
 	 * @return true if successfully printed the file else false.
 	 */
-	private static boolean printFile(PrintWriter out, File f) 
+	//TODO move to SouperkUtils
+	private boolean printFile(PrintWriter out, File f) 
 	{
 		try {
 			
 			if(f.exists())
 			{
-				File success = new File(ServerConfiguration.getInstance().getString(CODE_200));
+				System.out.println(f.getAbsolutePath());
+				File success = new File(conf.getString(CODE_200));
 				
 				out.println(FileUtils.readFileToString(success));
 				out.println();

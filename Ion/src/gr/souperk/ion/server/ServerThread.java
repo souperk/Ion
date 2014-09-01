@@ -1,12 +1,12 @@
 package gr.souperk.ion.server;
 
+import gr.souperk.ion.SouperkUtils;
 import gr.souperk.ion.conf.ServerConfiguration;
-import gr.souperk.ion.server.http.HttpRequest;
+import gr.souperk.ion.server.handle.RequestHandler;
+import gr.souperk.ion.server.handle.RequestHandlerFactory;
+import gr.souperk.ion.server.http.HttpConnection;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.Socket;
 
 import org.apache.logging.log4j.LogManager;
@@ -52,25 +52,23 @@ public class ServerThread
 
 			String address = "[" + socket.getLocalAddress().toString() + "]"; 
 			
-			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-			PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-		
-			HttpRequest request = new HttpRequest(in);
+			HttpConnection connection = new HttpConnection(socket.getInputStream(), socket.getOutputStream());
 
 			try {
 				
 				log.debug(address + "Proccessing request.");
-				RequestHandlerFactory.getHandler(request).handle(out);
+				
+				for(RequestHandler handler : SouperkUtils.getBean(RequestHandlerFactory.class).getHandlers())
+					handler.handle(connection);
 			
 			} catch (RequestException e) 
 			{
 				//TODO print fancy stuff for codes.
-				out.println(e.getCode());
+				connection.getOut().println(e.getCode());
 				log.info(address + "Got code " + e.getCode() + ".");
 			}
 			
-			in.close();
-			out.close();
+			connection.close();
 			socket.close();
 			
 		} catch (IOException e) {

@@ -14,75 +14,74 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * 
+ * 
  * @since 1.3
  * @author Kostas "souperk" Alexopoulos
  *
  */
-
-//TODO write javadoc
 public class ProxyConfiguration 
 {
 	
 	/** Logger ProxyConfiguration*/
 	private static Logger log = LogManager.getLogger(ProxyConfiguration.class);
 	
+	/** An instance of ProxyConfiguration passed to other classes by getInstace().*/
 	private static ProxyConfiguration instance;
 	
-	private XMLConfiguration conf;
+	/** A list o http proxies.*/
 	private List<Host> hosts;
 	
+	/**
+	 * Constructor of ProxyConfiguration.
+	 */
 	private ProxyConfiguration() 
 	{
 		hosts = new ArrayList<Host>();
 
 		try {
-			conf = new XMLConfiguration("conf/proxy.xml");
+			
+			XMLConfiguration conf = new XMLConfiguration("conf/proxy.xml");
 
-			init();
+			//TODO decide if i should move following code to another method.
+			//<--
+			List<HierarchicalConfiguration> hosts = conf.configurationsAt("host");
+			
+			for(HierarchicalConfiguration host : hosts)
+			{
+				Host h = new Host(host.getString("target"), host.getInt("target[@port]"));
+
+				List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
+				
+				for(HierarchicalConfiguration header : heads)
+				{
+					h.addRule(header.getString("[@name]"), header.getString(""));
+				}
+				
+				this.hosts.add(h);
+			}
+			//-->
+			
 		} catch (ConfigurationException e) 
 		{
 			log.error("Unable to open proxy configuration file (conf/proxy.xml).");
 		}
 	}
 	
+	/**
+	 * @return an active instance of ProxyConfiguration.
+	 */
 	public static ProxyConfiguration getInstance()
 	{
 		if(instance == null)
 			instance = new ProxyConfiguration();
+		
 		return instance;
 	}
-	
-	private void init()
-	{
-		List<HierarchicalConfiguration> hosts = conf.configurationsAt("host");
-		
-		for(HierarchicalConfiguration host : hosts)
-		{
-			Host h = new Host(host.getString("target"), host.getInt("target[@port]"));
-			
-			List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
-			
-			for(HierarchicalConfiguration header : heads)
-			{
-				h.addRule(header.getString("[@name]"), header.getString(""));
-			}
-			
-			this.hosts.add(h);
-		}
-	}
-	
-	public boolean exists(HttpRequest request)
-	{
-		for(Host host : hosts)
-		{
-			if(host.isValid(request))
-				return true;
-			log.info(host.toString() + " is invalid to " + request.get("Host"));
-		}
-		
-		return false;
-	}
-	
+
+	/**
+	 * @param request an http request.
+	 * @return Checks if a host exist that would accept the request and returns the host otherwise it null.
+	 */
 	public Host getHost(HttpRequest request)
 	{
 		for(Host host : hosts)

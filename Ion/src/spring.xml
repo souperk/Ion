@@ -4,6 +4,26 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<bean id="localRequestHandler" 
+		class="gr.souperk.ion.server.handle.LocalRequestHandler">
+		<constructor-arg ref="serverConfiguration"/>
+	</bean>
+
+	<bean id="parseRequestHandler" 
+		class="gr.souperk.ion.server.handle.ParseRequestHandler">
+	</bean>
+
+
+	<bean id="requestHandlerFactory" 
+		class="gr.souperk.ion.server.handle.RequestHandlerFactory">
+		<property name="handlers">
+			<list>
+				<ref bean="parseRequestHandler"/>
+				<ref bean="localRequestHandler"/>
+			</list>
+		</property>
+	</bean>
+
 	<bean id="serverThread" 
 		class="gr.souperk.ion.server.ServerThread">
 		<constructor-arg ref="serverConfiguration"/>
@@ -17,7 +37,11 @@
 	<bean id="serverConfiguration" 
 		class="gr.souperk.ion.conf.ServerConfiguration" 
 		factory-method="getInstance">
-		
+	</bean>
+	
+	<bean id="proxyConfiguration" 
+		class="gr.souperk.ion.conf.ProxyConfiguration" 
+		factory-method="getInstance">
 	</bean>
 	
 </beans>
