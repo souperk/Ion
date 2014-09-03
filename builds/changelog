@@ -1,2 +1,5 @@
 1.3.0
   First jar created.
+1.4.0
+  Partial spring integration.
+  Support for custom RequestHandlers(a pretty bad one).

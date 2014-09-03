@@ -1,1 +1,2 @@
 First jar available is ion-1.3.0.jar
+ion-1.4.0.jar available from 3/9/2014
