@@ -4,13 +4,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="localRequestHandler" 
-		class="gr.souperk.ion.server.handle.LocalRequestHandler">
+	<bean id="requestPrinter" 
+		class="gr.souperk.ion.server.handle.RequestPrinter">
+	</bean>
+
+	<bean id="requestProcessor" 
+		class="gr.souperk.ion.server.handle.RequestProcessor">
 		<constructor-arg ref="serverConfiguration"/>
 	</bean>
 
-	<bean id="parseRequestHandler" 
-		class="gr.souperk.ion.server.handle.ParseRequestHandler">
+	<bean id="requestManipulator" 
+		class="gr.souperk.ion.server.handle.RequestManipulator">
+		<constructor-arg ref="proxyConfiguration"/>
+	</bean>
+
+	<bean id="requestParser" 
+		class="gr.souperk.ion.server.handle.RequestParser">
 	</bean>
 
 
@@ -18,8 +27,10 @@
 		class="gr.souperk.ion.server.handle.RequestHandlerFactory">
 		<property name="handlers">
 			<list>
-				<ref bean="parseRequestHandler"/>
-				<ref bean="localRequestHandler"/>
+				<ref bean="requestParser"/>
+				<ref bean="requestManipulator"/>
+				<ref bean="requestProcessor"/>
+				<ref bean="requestPrinter"/>
 			</list>
 		</property>
 	</bean>

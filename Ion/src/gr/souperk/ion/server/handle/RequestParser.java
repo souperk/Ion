@@ -6,7 +6,15 @@ import gr.souperk.ion.server.RequestException;
 import gr.souperk.ion.server.http.HttpConnection;
 import gr.souperk.ion.server.http.HttpRequest;
 
-public class ParseRequestHandler 
+
+/**
+*
+* @since 1.4.0
+* @author Kostas "souperk" Alexopoulos 
+*
+*/
+//TODO write javadoc.
+public class RequestParser 
 	implements RequestHandler
 {
 

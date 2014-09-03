@@ -2,7 +2,7 @@
 <proxy>
 	
 	#sample proxy configuration
-	<host id="mygoogle.gr">
+	<host id="test.p4u.gr">
 		
 		<target port="80">google.gr</target>
 

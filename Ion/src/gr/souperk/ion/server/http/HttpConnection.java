@@ -46,7 +46,7 @@ public class HttpConnection
 			throws IOException 
 	{
 		this.in = new BufferedReader(new InputStreamReader(in));
-		this.out = new PrintWriter(out, true);
+		this.out = new PrintWriter(out);
 	}
 	
 	/**
