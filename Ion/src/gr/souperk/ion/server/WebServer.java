@@ -35,9 +35,10 @@ public class WebServer
 	/** Normal status for running.*/
 	public static final int SERVER_RUNNING 		= 4;
 	
-	private int port;
+	/** The status of the server.*/
 	private int status;
 	
+	/** {@code ServerConfiguration}*/
 	private ServerConfiguration conf;
 	/**
 	 * 
@@ -57,7 +58,7 @@ public class WebServer
 		ServerSocket srv;
 		boolean flag = true;
 
-		port = conf.getInt(PropertiesTool.PORT);
+		int port = conf.getInt(PropertiesTool.PORT);
 		setStatus(SERVER_RUNNING);
 		
 		try {
