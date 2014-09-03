@@ -11,12 +11,13 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * @author Kostas "souperk" Alexopoulos
  *
  */
-
 //TODO Finish javadoc
 //TODO ADD more HTTP codes
 public class PropertiesTool
 {
 	public static String DEFAUL_CONF_FILE = "conf/ion.conf";
+
+	public static String PROXY_CONF_FILE = "conf.proxy";
 	
 	/** Port to start Server on*/
 	public static String PORT = "port";
@@ -36,7 +37,6 @@ public class PropertiesTool
 	
 	
 	/**
-	 * 
 	 * @return The default properties for the server.
 	 */
 	public static Configuration defaults()
@@ -44,6 +44,7 @@ public class PropertiesTool
 		Configuration conf = new PropertiesConfiguration();
 
 		conf.addProperty(PORT, "1026");
+		conf.addProperty(PROXY_CONF_FILE, "conf/proxy.xml");
 		
 		conf.addProperty(COMMAND_GET, "GET");
 		conf.addProperty(HTTP_VERSION, "HTTP/1.1");

@@ -73,7 +73,7 @@ public class HttpResponse
 	{
 		StringBuilder sb = new StringBuilder();
 		Iterator<String> it = heads.keySet().iterator();
-		
+
 		sb.append(code + "\n");
 		
 		while(it.hasNext())

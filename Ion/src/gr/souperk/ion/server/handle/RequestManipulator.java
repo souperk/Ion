@@ -32,6 +32,7 @@ public class RequestManipulator
 		{
 			connection.setHost(host);
 		}
+		
 	}
 
 }

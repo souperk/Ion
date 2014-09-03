@@ -1,7 +1,7 @@
 package gr.souperk.ion;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
  * 
@@ -19,14 +19,14 @@ public class SouperkUtils
 	public static <T> T getBean(Class<T> bean)
 	{
 		if(context == null)
-			context = new ClassPathXmlApplicationContext("spring.xml");
+			context = new FileSystemXmlApplicationContext("conf/spring.xml");
 		
 		return context.getBean(bean);
 	}
 	
 	public static void close()
 	{
-		((ClassPathXmlApplicationContext)context ).close();
+		((FileSystemXmlApplicationContext)context ).close();
 	}
 	
 	public static boolean startsWithIngoreCase(String base, String str)

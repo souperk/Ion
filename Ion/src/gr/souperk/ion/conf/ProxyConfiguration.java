@@ -19,6 +19,7 @@ import org.apache.logging.log4j.Logger;
  * @author Kostas "souperk" Alexopoulos
  *
  */
+//TODO write javadoc
 public class ProxyConfiguration 
 {
 	
@@ -34,53 +35,61 @@ public class ProxyConfiguration
 	/**
 	 * Constructor of ProxyConfiguration.
 	 */
-	private ProxyConfiguration() 
+	private ProxyConfiguration(ServerConfiguration conf) 
 	{
 		hosts = new ArrayList<Host>();
 
-		try {
-			
-			XMLConfiguration conf = new XMLConfiguration("conf/proxy.xml");
-
-			//TODO decide if i should move following code to another method.
-			//<--
-			List<HierarchicalConfiguration> hosts = conf.configurationsAt("host");
-			
-			for(HierarchicalConfiguration host : hosts)
-			{
-				Host h = new Host(host.getString("target"), host.getInt("target[@port]"));
-
-				List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
-				
-				for(HierarchicalConfiguration header : heads)
-				{
-					h.addRule(header.getString("[@name]"), header.getString(""));
-				}
-				
-				this.hosts.add(h);
-			}
-			//-->
-			
-		} catch (ConfigurationException e) 
-		{
-			log.error("Unable to open proxy configuration file (conf/proxy.xml).");
-		}
+		load(conf.getString(PropertiesTool.PROXY_CONF_FILE));
 	}
 	
 	/**
-	 * @return an active instance of ProxyConfiguration.
+	 * @return an active instance of {@code ProxyConfiguration}.
 	 */
-	public static ProxyConfiguration getInstance()
+	public static ProxyConfiguration getInstance(ServerConfiguration conf)
 	{
 		if(instance == null)
-			instance = new ProxyConfiguration();
+			instance = new ProxyConfiguration(conf);
 		
 		return instance;
+	}
+	
+	/**
+	 * Loads {@code Host}s from a specified file.
+	 * @param filename proxy configuration file.
+	 */
+	private void load(String filename) 
+	{
+		XMLConfiguration xmlConf;
+		
+		try {
+			xmlConf = new XMLConfiguration(filename);
+		} catch (ConfigurationException e) 
+		{
+			log.error("Unable to open proxy configuration file (" + filename + ").");
+			return ;
+		}
+
+		List<HierarchicalConfiguration> hosts = xmlConf.configurationsAt("host");
+		
+		for(HierarchicalConfiguration host : hosts)
+		{
+			Host h = new Host(host.getString("target"), host.getInt("target[@port]"));
+
+			List<HierarchicalConfiguration> heads = host.configurationsAt("headers.header");
+			
+			for(HierarchicalConfiguration header : heads)
+			{
+				h.addRule(header.getString("[@name]"), header.getString(""));
+			}
+			
+			this.hosts.add(h);
+		}
+
 	}
 
 	/**
 	 * @param request an http request.
-	 * @return Checks if a host exist that would accept the request and returns the host otherwise it null.
+	 * @return Checks if a {@code Host} exists that would accept the request and returns that {@code Host} otherwise null.
 	 */
 	public Host getHost(HttpRequest request)
 	{

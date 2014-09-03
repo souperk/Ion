@@ -25,6 +25,9 @@ import org.apache.logging.log4j.Logger;
  * Since 1.4 {@code ServerConfiguration} can be loaded from SouperkUtils.getBean(Class<T> bean) more resistant to 
  * future changes in turns of backwards compatibility.
  * 
+ * <br></br>
+ * Trivia : {@code ServerConfiguration} is the first class to have a complete javadoc.
+ * 
  * @since 1.0 as {@code ServerProperties} in 1.4 renamed to {@code ServerConfiguration}
  * @author Kostas "souperk" Alexopoulos
  *
@@ -52,14 +55,7 @@ public class ServerConfiguration
 	{
 		super(PropertiesTool.defaults());
 
-		try 
-		{
-			addConfiguration(loadProperties());
-		} catch (ConfigurationException e) 
-		{
-			//TODO Fix this.
-			log.warn("Unable to open configuration file (resources/ion.conf)");
-		}
+		addConfiguration(loadProperties());
 	}	
 
 	/**
@@ -73,13 +69,20 @@ public class ServerConfiguration
 	}
 	
 	/**
-	 * @return A {@code PropertiesConfiguration} loaded from {@code PropertiesTool.DEFAULT_CONF_FILE}.
-	 * @throws ConfigurationException If error while loading properties file.
+	 * @return A {@code PropertiesConfiguration} loaded from {@code PropertiesTool.DEFAULT_CONF_FILE}. 
+	 * If a {@code ConfigurationException} is thrown returns null.
 	 */
 	private PropertiesConfiguration loadProperties() 
-			throws ConfigurationException
 	{
-		return new PropertiesConfiguration(new File(PropertiesTool.DEFAUL_CONF_FILE));
+		PropertiesConfiguration conf;
+		try {
+			conf = new PropertiesConfiguration(new File(PropertiesTool.DEFAUL_CONF_FILE));
+		} catch (ConfigurationException e) {
+			log.warn("Unable to open configuration file (" + PropertiesTool.DEFAUL_CONF_FILE + ")");
+			conf = null;
+		}
+		
+		return conf;
 	}
 
 }

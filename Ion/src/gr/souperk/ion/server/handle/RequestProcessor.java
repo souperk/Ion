@@ -132,8 +132,8 @@ public class RequestProcessor
 			if(file.exists())
 			{
 				File success = new File(conf.getString(CODE_200));
-				connection.getResponse().setMessage(FileUtils.readFileToString(success) + "\n\n" 
-						+ FileUtils.readFileToString(file));
+				connection.getResponse().setCode(FileUtils.readFileToString(success));
+				connection.getResponse().setMessage(FileUtils.readFileToString(file));
 			}
 			else
 				throw new RequestException(404);

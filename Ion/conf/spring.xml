@@ -53,6 +53,7 @@
 	<bean id="proxyConfiguration" 
 		class="gr.souperk.ion.conf.ProxyConfiguration" 
 		factory-method="getInstance">
+		<constructor-arg ref="serverConfiguration"/>
 	</bean>
 	
 </beans>
