@@ -51,10 +51,17 @@ public class RequestProcessor
 
 		connection.setResponse(new HttpResponse());
 		
-		if(connection.getHost() == null)
+		if(connection.getHost() == null) 
+		{
+			log.debug("Local Handling");
 			localHandle(connection);
-		else
+		
+		}
+		else 
+		{
+			log.debug("Proxy Handling");
 			proxyHandle(connection);
+		}
 		
 	}
 	
